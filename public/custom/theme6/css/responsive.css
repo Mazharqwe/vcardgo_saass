@@ -1,0 +1,90 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+
+@media (min-width:992px) {
+
+
+  .desk-only {
+    display: block !important;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+
+}
+
+
+@media screen and (max-width:1199px) {
+  :root {
+    --h1: normal 700 40px/1 var(--Strawford);
+    --h2: normal 700 32px/1 var(--Strawford);
+    --h3: normal 700 26px/1 var(--Strawford);
+    --h4: normal 700 20px/1 var(--Strawford);
+    --h5: normal 700 18px/1 var(--Strawford);
+    --h6: normal 700 16px/1 var(--Strawford);
+  }
+
+}
+
+@media screen and (max-width:991px) {
+  :root {
+    --h1: normal 700 36px/1 var(--Strawford);
+    --common-text: normal 400 14px/1.4 var(--Strawford);
+  }
+}
+
+
+
+@media screen and (max-width:575px) {
+  :root {
+    --h2: normal 700 28px/1 var(--Strawford);
+    --h3: normal 700 24px/1 var(--Strawford);
+    --h4: normal 700 22px/1 var(--Strawford);
+    --h5: normal 700 20px/1 var(--Strawford);
+  }
+}
+
+@media screen and (max-width:420px) {
+  #view_theme16 .social-list li a{
+    width: 45px;
+    height: 45px;
+  }
+  #view_theme16 .social-list li a svg{
+    width: 20px;
+    height: 20px;
+  }
+  #view_theme16 .social-list li a img{
+    width: 20px;
+    height: 20px;
+  }
+  #view_theme16 .gallery-section+.testimonial-section {
+    margin-top: -110px;
+    padding-top: 150px;
+  }
+  #view_theme16 .profile-section{
+    padding-top: 250px;
+  }
+  #view_theme16 .profile-content .desc-wrapper {
+    margin: 20px 0 0 0;
+  }
+  #view_theme16 .contact-section ul li a{
+    font-size: 24px;
+  }
+  #view_theme16 .contact-section .contact-datail {
+    font-size: 23px;
+}
+#view_theme16 .picker__holder {
+  left: 0px;
+}
+#view_theme16 .bussiness-hour ul li {
+  width: 100%;
+  float: unset;
+  font-size: 16px;
+}
+
+}
+

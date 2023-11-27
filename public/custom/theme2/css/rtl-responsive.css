@@ -1,0 +1,92 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+
+@media (min-width:992px) {
+
+
+    .desk-only {
+        display: block !important;
+    }
+
+    .mobile-only {
+        display: none !important;
+    }
+
+}
+
+
+@media screen and (max-width:1199px) {
+    :root {
+        --h1: normal 700 40px/1 var(--first-font);
+        --h2: normal 700 32px/1 var(--first-font);
+        --h3: normal 700 26px/1 var(--first-font);
+        --h4: normal 700 20px/1 var(--first-font);
+        --h5: normal 700 18px/1 var(--first-font);
+        --h6: normal 700 16px/1 var(--first-font);
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    :root {
+        --h1: normal 700 36px/1 var(--first-font);
+        --common-text: normal 400 14px/1.4 var(--first-font);
+    }
+}
+
+
+
+@media screen and (max-width:575px) {
+    :root {
+        --h2: normal 700 28px/1 var(--first-font);
+        --h3: normal 700 24px/1 var(--first-font);
+        --h4: normal 700 22px/1 var(--first-font);
+        --h5: normal 700 20px/1 var(--first-font);
+    }
+
+
+}
+
+@media screen and (max-width:420px) {
+    #view_theme12 .social-list li a {
+        width: 45px;
+        height: 45px;
+    }
+
+    #view_theme12 .social-list li a svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #view_theme12 .social-list li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #view_theme12 .picker__holder {
+        left: 0px;
+    }
+
+    #view_theme12 .daily-hours-inner {
+        display: flex;
+    }
+
+    #view_theme12 .bussiness-hour ul li {
+        width: 100%;
+        float: unset;
+    }
+    #view_theme12 .contact-section ul li a{
+        font-size: 18px;
+      }
+      #view_theme12 .contact-section ul li a span{
+        width: 40px;
+        height: 40px;
+      }
+      #view_theme12 .contact-section ul li a span img {
+        width: 20px;
+        height: 20px;
+      }
+}

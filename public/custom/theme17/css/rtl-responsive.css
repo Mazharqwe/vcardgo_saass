@@ -1,0 +1,249 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+@media screen and (max-width:500px) {
+  #view_theme6 .service-section .service-card-wrapper .service-card {
+    max-width: 100%;
+  }
+
+  #view_theme6 .service-card-wrapper .service-card:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  #view_theme6 .qr-scaner-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:420px) {
+  :root .theme17-v1, :root .theme17-v2, :root .theme17-v3, :root .theme17-v4, :root .theme17-v5 {
+    --h1: normal 600 32px/1 var(--Strawford);
+    --h2: normal 600 28px/1 var(--Strawford);
+    --h3: normal 600 26px/1 var(--Strawford);
+    --h4: normal 600 20px/1 var(--Strawford);
+    --h5: normal 600 18px/1 var(--Strawford);
+    --h6: normal 600 16px/1 var(--Strawford);
+  }
+
+  /**** HOME PAGE CSS ****/
+  #view_theme6 .padding-top {
+    padding-top: 40px;
+  }
+
+  #view_theme6 .padding-bottom {
+    padding-bottom: 40px;
+  }
+
+  #view_theme6 .section-title {
+    margin-bottom: 20px;
+  }
+
+  #view_theme6 .client-contact .contactlink a {
+    font-size: 18px;
+  }
+
+  #view_theme6 .client-contact .contactlink span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  #view_theme6 .client-info-section {
+    padding-bottom: 20px;
+  }
+
+  #view_theme6 .client-contact p {
+    margin-bottom: 20px;
+  }
+
+  #view_theme6 .daily-hours-content .daily-hours-inner ul li {
+    font-size: 13px;
+  }
+
+  #view_theme6 .daily-hours-content .daily-hours-inner ul li p {
+    font-size: 13px;
+  }
+
+  #view_theme6 .daily-hours-content .daily-hours-inner ul li span {
+    font-size: 13px;
+  }
+
+  #view_theme6 .text-radio .radio {
+    max-width: 100%;
+  }
+
+  #view_theme6 .text-radio .radio-left {
+    padding-right: 0px;
+  }
+
+  #view_theme6 .close-btn {
+    padding: 14px 20px;
+  }
+
+  #view_theme6 .qr-code-text p {
+    font-size: 14px;
+  }
+
+  #view_theme6 .social-icon-wrapper li a svg {
+    height: 22px;
+    width: 22px;
+  }
+
+  #view_theme6 .social-icon-wrapper li a img {
+    height: 22px;
+    width: 22px;
+  }
+
+  #view_theme6 .business-hour-section {
+    padding: 30px 0px;
+  }
+
+  #view_theme6 .more-card-section {
+    padding: 30px 0px;
+  }
+
+  #view_theme6 .social-icons-section .section-title {
+    margin-bottom: 35px;
+  }
+
+  #view_theme6 .appo-form-details {
+    padding: 30px 0px 10px;
+  }
+
+  #view_theme6 .share-card-wrapper .section-title {
+    margin-bottom: 20px;
+  }
+
+  #view_theme6 .qr-scaner-wrapper .qr-code-text {
+    margin: 30px 0px;
+  }
+
+  #view_theme6 .qr-scaner-wrapper .card-social-icons {
+    margin-bottom: 15px;
+  }
+
+  #view_theme6 .card-social-icons li {
+    height: 40px;
+    width: 40px;
+  }
+
+  #view_theme6 .card-social-icons li a svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  #view_theme6 .card-social-icons li a img {
+    height: 20px;
+    width: 20px;
+  }
+
+  #view_theme6 .service-card-inner .service-icon svg {
+    height: 28px;
+    width: 28px;
+    margin: 0 auto 15px;
+  }
+
+  #view_theme6 .service-card-inner .service-icon img {
+    height: 28px;
+    width: 28px;
+    margin: 0 auto 15px;
+  }
+
+  #view_theme6 .picker__holder {
+    max-width: 300px;
+    right: 56px;
+  }
+
+  #view_theme6 .testimonial-itm-inner .testi-client-img img {
+    border-radius: 115px;
+  }
+
+  #view_theme6 .picker {
+    width: 90%;
+  }
+
+  /**** HOME PAGE CSS end****/
+}
+
+@media screen and (max-width:370px) {
+
+  /**** HOME PAGE CSS ****/
+  #view_theme6 .home-banner-section::before {
+    height: 15px;
+  }
+
+  #view_theme6 .client-contact .contactlink a span {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  #view_theme6 .client-contact .contactlink a .contact-svg svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  #view_theme6 .client-contact .contactlink a .contact-svg img {
+    height: 20px;
+    width: 20px;
+  }
+
+  #view_theme6 .client-contact .contactlink a .contact-svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  #view_theme6 .appointment-section .appointment-date {
+    flex-direction: column;
+  }
+
+  #view_theme6 .appointment-date .date-label,
+  #view_theme6 .appointment-hour .hour-label {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #view_theme6 .appointment-btn {
+    margin-right: 0px;
+  }
+
+  #view_theme6 .social-icon-wrapper {
+    max-width: 100%;
+  }
+
+  #view_theme6 .title-svg svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  #view_theme6 .title-svg img {
+    height: 25px;
+    width: 25px;
+  }
+
+  #view_theme6 .title-svg {
+    height: 45px;
+    width: 45px;
+  }
+
+  #view_theme6 .form-btn-group .btn {
+    padding: 14px 15px;
+  }
+
+  #view_theme6 .close-search {
+    height: 26px;
+    width: 26px;
+  }
+
+  #view_theme6 .social-icon-wrapper li:not(:last-of-type) {
+    margin-left: 15px;
+  }
+
+  #view_theme6 .picker__holder {
+    max-width: 300px;
+    right: 0px;
+    top: 75px;
+  } 
+
+  /**** HOME PAGE CSS end****/
+}

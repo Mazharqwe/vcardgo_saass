@@ -1,0 +1,192 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+@media screen and (max-width:500px){  
+  #view_theme10 .service-section .service-card-wrapper {
+    flex-direction: column;
+  }
+  #view_theme10 .service-section .service-card-wrapper .service-card {
+    max-width: 100%;
+  }
+  #view_theme10 .service-section .service-card-wrapper .service-card:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  #view_theme10 .more-card-section .more-btn {
+    flex-direction: column;
+  }
+  #view_theme10 .more-card-section .more-btn .btn:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  #view_theme10 .qr-scaner-wrapper {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:440px){ 
+  :root .theme21-v1,:root .theme21-v2,:root .theme21-v3,:root .theme21-v4,:root .theme21-v5 {
+    --h1: normal 600 32px/1 var(--Strawford);
+    --h2: normal 600 26px/1 var(--Strawford);
+    --h3: normal 600 24px/1 var(--Strawford);
+    --h4: normal 600 20px/1 var(--Strawford);
+    --h5: normal 600 18px/1 var(--Strawford);
+    --h6: normal 600 16px/1 var(--Strawford);
+  } 
+  /**** HOME PAGE CSS ****/ 
+  #view_theme10 .padding-top{
+    padding-top: 30px;
+  }
+  #view_theme10 .padding-bottom{
+    padding-bottom: 30px;
+  }
+  #view_theme10 .section-title {
+    margin-bottom: 22px;
+  }
+  #view_theme10 .bg-white {
+    padding: 15px 15px;
+  }  
+  #view_theme10 .client-image {
+    height: 130px;
+    width: 130px;
+    margin: 0px auto 15px;
+  }
+  #view_theme10 .appointment-date .date-label, 
+  #view_theme10 .appointment-hour .hour-label {
+    max-width: 50px;
+    text-align: start;
+  }  
+  #view_theme10 .text-radio .radio {
+    max-width: 100%;
+  }    
+  #view_theme10 .text-radio .radio-left {
+    padding-left: 0px;
+  }
+  #view_theme10 .close-btn {
+    padding: 14px 20px;
+  }  
+  #view_theme10 .qr-code-text p {
+    font-size: 14px;
+  }  
+  #view_theme10 .banner-social-icons li a .contact-svg {
+    height: 40px;
+    width: 40px;
+  }  
+  #view_theme10 .banner-social-icons li a .contact-svg svg {
+    height: 22px;
+    width: 22px;
+  }  
+    #view_theme10 .banner-social-icons li a .contact-svg img {
+    height: 22px;
+    width: 22px;
+  }  
+  #view_theme10 .service-card-inner .service-icon svg {
+    height: 30px;
+    width: 30px;
+    margin: 0px auto 15px;
+  }
+    #view_theme10 .service-card-inner .service-icon img {
+    height: 30px;
+    width: 30px;
+    margin: 0px auto 15px;
+  }
+  #view_theme10 .service-card-inner h5 {
+    margin-bottom: 10px;
+  }
+  #view_theme10 .social-icons-second-section .social-icon li {
+    height: 40px;
+    width: 40px;
+  }
+  #view_theme10 .social-icons-second-section .social-icon li a svg {
+    height: 22px;
+    width: 22px;
+  }    
+  #view_theme10 .social-icons-second-section .social-icon li a img {
+    height: 22px;
+    width: 22px;
+  } 
+  #view_theme10 .more-card-section .more-btn {
+    margin-bottom: 30px;
+  }    
+  #view_theme10 .qr-scaner-wrapper .qr-code-text {
+    margin: 30px 0px;
+  }  
+  #view_theme10 .card-social-icons li {
+    height: 40px;
+    width: 40px;
+  }  
+  #view_theme10 .card-social-icons li a svg {
+    height: 21px;
+    width: 21px;
+  }
+  #view_theme10 .qr-scaner-wrapper .card-social-icons {
+    margin-bottom: 15px;
+  }  
+  #view_theme10 .form-btn-group .btn{
+    padding: 14px 15px;
+  }
+  #view_theme10 .appo-form-details {
+    padding: 30px 0px 10px;
+  }
+  #view_theme10 .close-search {
+    height: 26px;
+    width: 26px;
+  }  
+  #view_theme10 .share-card-wrapper .section-title {
+    margin-bottom: 20px;
+  }
+  #view_theme10 .qr-image {
+    height: 200px;
+    width: 200px;
+  }
+  #view_theme10 .client-text-section .client-text p {
+    text-align: start;
+  }  
+  #view_theme10 .picker__holder {
+    max-width: 265px;
+    top: 24px;
+    left: 50px;
+  }
+  #view_theme10 .picker {
+    width: 90%;
+   }
+  #view_theme10 .appointment-btn {
+    margin-left: 0px;
+  }
+  #view_theme10 .testi-client-img img {
+    border-radius: 105px;
+  }
+  /**** HOME PAGE CSS end****/
+}
+@media screen and (max-width:370px){  
+  /**** HOME PAGE CSS ****/    
+  #view_theme10 .appointment-date .date-label, 
+  #view_theme10 .appointment-hour .hour-label {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }  
+  #view_theme10 .title-svg svg {
+    height: 25px;
+    width: 25px;
+  }
+  #view_theme10 .title-svg {
+    height: 45px;
+    width: 45px;  
+  }  
+  #view_theme10 .social-icon-wrapper li a svg {
+    height: 25px;
+    width: 25px;
+  }
+   #view_theme10 .social-icon-wrapper li a img {
+    height: 25px;
+    width: 25px;
+  }
+  #view_theme10 .social-icon-wrapper li {
+    height: 45px;
+    width: 45px;
+  }  
+  #view_theme10 .picker__holder {
+        top: 40px;
+        left: 0px;
+    }
+  /**** HOME PAGE CSS end****/
+}

@@ -1,0 +1,168 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+@media screen and (max-width:500px){  
+  .qr-scaner-wrapper {
+    max-width: 100%;
+  }  
+  .logout-btn svg{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width:430px){  
+  :root .theme13-v1,:root .theme13-v2,:root .theme13-v3,:root .theme13-v4,:root .theme13-v5 {
+    --h1: normal 600 32px/1 var(--first-font);
+    --h2: normal 600 26px/1 var(--first-font);
+    --h3: normal 600 24px/1 var(--first-font);
+    --h4: normal 600 20px/1 var(--first-font);
+    --h5: normal 600 18px/1 var(--first-font);
+    --h6: normal 600 16px/1 var(--first-font);
+  }
+  /**** HOME PAGE CSS ****/ 
+  .padding-top{
+    padding-top: 50px;
+  }
+  .padding-bottom{
+    padding-bottom: 50px;
+  }
+  .section-title {
+    margin-bottom: 22px;
+  }
+  .home-banner-section .home-banner {
+    border-radius: 15px 15px 30px 30px;
+  } 
+  .client-image {
+    height: 130px;
+    width: 130px;
+  }
+  .client-info-section {
+    margin-top: -60px;
+  } 
+  .client-contact {
+    padding-top: 50px;
+  }
+  .client-contact::before {
+    top: 25px;
+  }  
+  .common-border::before {
+    top: 25px;
+  }  
+  .section-title svg {
+    height: 22px;
+    width: 22px;
+  }
+  .close-search {
+    height: 26px;
+    width: 26px;
+  }  
+  .close-search svg {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+  }  
+  .client-contact .contactlink a span {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .client-contact .contactlink a svg {
+    height: 22px;
+    width: 22px;
+  }  
+  .daily-hours-content .daily-hours-inner ul li {
+    font-size: 13px;
+  }
+  .text-radio .radio {
+    max-width: 100%;
+  }    
+  .text-radio .radio-left {
+    padding-right: 0px;
+  }
+  .service-section .service-card-wrapper .service-card {
+    max-width: 100%;
+  } 
+  .service-card-wrapper .service-card:not(:last-of-type){
+    margin-bottom: 15px;
+  }
+  .close-btn {
+    padding: 14px 20px;
+  }  
+  .qr-code-text p {
+    font-size: 14px;
+  }  
+  .appo-form-details {
+    padding: 30px 0px 10px;
+  }
+  .service-card-inner .service-icon svg {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto 15px;
+  }  
+  .service-card-inner p {
+    margin: 12px 0px;
+  }
+  .qr-image {
+    height: 190px;
+    width: 190px;
+  }  
+  .share-card-wrapper .section-title {
+    margin-bottom: 20px;
+  }
+  .form-btn-group .btn{
+    padding: 14px 20px;
+  }
+  .qr-scaner-wrapper .qr-code-text {
+    margin: 30px 0px;
+  }  
+  .card-social-icons li {
+    height: 40px;
+    width: 40px;
+  }  
+  .card-social-icons li a svg {
+    height: 22px;
+    width: 22px;
+  }
+  .qr-scaner-wrapper .card-social-icons {
+    margin-bottom: 15px;
+  }  
+  .social-icon-wrapper {
+    max-width: 100%;
+    padding-bottom: 20px;
+  } 
+  .social-icon-wrapper li a svg {
+    height: 25px;
+    width: 25px;
+  }
+  .social-icon-wrapper li {
+    height: 40px;
+    width: 40px;
+  }  
+  /**** HOME PAGE CSS end****/
+}
+@media screen and (max-width:370px){  
+  /**** HOME PAGE CSS ****/     
+  .logout-btn svg{
+    margin: auto;
+  }
+  .client-contact .contactlink a svg {
+    height: 20px;
+    width: 20px;
+  }  
+  .appointment-section .appointment-date {
+    flex-direction: column;
+  }
+  .appointment-date .date-label, .appointment-hour .hour-label {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }   
+  .title-svg svg {
+    height: 25px;
+    width: 25px;
+  }
+  .title-svg {
+    height: 45px;
+    width: 45px;  
+  }  
+  /**** HOME PAGE CSS end****/
+}

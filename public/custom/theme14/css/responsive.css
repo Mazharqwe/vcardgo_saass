@@ -1,0 +1,180 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+@media screen and (max-width:500px){ 
+  #view_theme3 .qr-scaner-wrapper {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:430px){ 
+  :root .theme14-v1,:root .theme14-v2,:root .theme14-v3,:root .theme14-v4,:root .theme14-v5 {
+    --h1: normal 600 32px/1 var(--Strawford);
+    --h2: normal 600 28px/1 var(--Strawford);
+    --h3: normal 600 26px/1 var(--Strawford);
+    --h4: normal 600 20px/1 var(--Strawford);
+    --h5: normal 600 18px/1 var(--Strawford);
+    --h6: normal 600 16px/1 var(--Strawford);
+  } 
+  /**** HOME PAGE CSS ****/ 
+  #view_theme3 .padding-top{
+    padding-top: 40px;
+  }
+  #view_theme3 .padding-bottom{
+    padding-bottom: 40px;
+  }
+  #view_theme3 .section-title {
+    margin-bottom: 20px;
+  }
+  #view_theme3 .client-intro {
+    padding-left: 15px;
+  }  
+  #view_theme3 .client-contact {
+    padding-top: 15px;
+  }
+  #view_theme3 .client-contact .contactlink a span {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  #view_theme3 .client-contact .contactlink a .contact-svg svg {
+    height: 20px;
+    width: 20px;
+  }  
+  #view_theme3 .client-contact .contactlink a .contact-svg {
+    height: 40px;
+    width: 40px;
+  }  
+  #view_theme3 .client-contact p {
+    margin-bottom: 20px;
+  }
+  #view_theme3 .daily-hours-content .daily-hours-inner ul li p{
+    font-size: 13px;
+  }
+  #view_theme3 .text-radio .radio {
+    max-width: 100%;
+  }    
+  #view_theme3 .text-radio .radio-left {
+    padding-left: 0px;
+  }
+  #view_theme3 .service-section .service-card-wrapper .service-card {
+    max-width: 100%;
+  } 
+  #view_theme3 .service-card-wrapper .service-card:not(:last-of-type){
+    margin-bottom: 15px;
+  }
+  #view_theme3 .service-card-inner .service-icon {
+    height: 40px;
+    width: 40px;
+    margin: 0 auto 15px;
+  }
+  #view_theme3 .service-card-inner .service-icon img {
+    height: 22px;
+    width: 22px;
+  }  
+  #view_theme3 .close-btn {
+    padding: 14px 20px;
+  }  
+  #view_theme3 .qr-code-text p {
+    font-size: 14px;
+  }  
+  #view_theme3 .social-icon-wrapper li a svg {
+    height: 22px;
+    width: 22px;
+  }
+  #view_theme3 .appointment-section {
+    padding: 40px 0px;
+  }
+  #view_theme3 .business-hour-section {
+    padding: 40px 0px;
+  }  
+  #view_theme3 .more-card-section {
+    padding: 40px 0px;
+  }  
+  #view_theme3 .service-card-inner p {
+    margin: 12px 0px;
+  }
+  #view_theme3 .appo-form-details {
+    padding: 30px 0px 10px;
+  }
+  #view_theme3 .close-search {
+    height: 26px;
+    width: 26px;
+  }  
+  #view_theme3 .qr-image {
+    height: 200px;
+    width: 200px;
+  } 
+  #view_theme3 .share-card-wrapper .section-title {
+    margin-bottom: 20px;
+  }
+  #view_theme3 .qr-scaner-wrapper .qr-code-text {
+    margin: 30px 0px;
+  }  
+  #view_theme3 .card-social-icons li {
+    height: 40px;
+    width: 40px;
+  }  
+  #view_theme3 .card-social-icons li a svg {
+    height: 20px;
+    width: 20px;
+  }
+  #view_theme3 .qr-scaner-wrapper .card-social-icons {
+    margin-bottom: 10px;
+  }  
+
+  #view_theme3 .picker__holder {
+    max-width: 300px;
+    left: 46px; 
+    top:16px;
+  }
+  #view_theme3 .testimonial-itm-inner .testi-client-img img
+  { 
+    border-radius: 115px;
+  }
+
+  /**** HOME PAGE CSS end****/
+}
+@media screen and (max-width:370px){  
+  :root .theme14-v1,:root .theme14-v2,:root .theme14-v3,:root .theme14-v4,:root .theme14-v5 {
+    --h1: normal 600 32px/1 var(--Strawford);
+    --h2: normal 600 28px/1 var(--Strawford);
+    --h3: normal 600 26px/1 var(--Strawford);
+    --h4: normal 600 20px/1 var(--Strawford);
+    --h5: normal 600 18px/1 var(--Strawford);
+    --h6: normal 600 16px/1 var(--Strawford);
+  } 
+  /**** HOME PAGE CSS ****/ 
+  #view_theme3 .appointment-section .appointment-date {
+    flex-direction: column;
+  }
+  #view_theme3 .appointment-date .date-label, .appointment-hour .hour-label {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }  
+  #view_theme3 .social-icon-wrapper {
+    max-width: 100%;
+  }  
+  #view_theme3 .form-btn-group .btn{
+    padding: 14px 15px;
+  }
+  #view_theme3 .social-icon-wrapper li:not(:last-of-type) {
+    margin-right: 15px;
+  }
+  #view_theme3 .social-icons-section .section-title {
+    margin-bottom: 20px;
+  }
+  #view_theme3 .picker__holder {
+    max-width: 300px;
+    left: 10px; 
+    top:80px;
+  }
+  #view_theme3 .social-icon-wrapper li a img{
+    height: 22px;
+    width: 22px;
+  }
+  #view_theme3 .daily-hours-content .daily-hours-inner ul li p {
+    font-size: 12px;
+  }
+  /**** HOME PAGE CSS end****/
+}

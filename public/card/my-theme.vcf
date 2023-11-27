@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+REV:2023-05-19T10:56:12Z
+N;CHARSET=utf-8:;My theme;;;
+FN;CHARSET=utf-8:My theme
+ORG;CHARSET=utf-8:My theme
+ROLE;CHARSET=utf-8:My theme
+TEL;TYPE#WORK,VOICE:7894561238
+EMAIL;INTERNET:www.email.com
+TEL;WORK:9874563218
+URL;TYPE=Facebook:https://facebook.com
+URL;TYPE=Instagram:www. Instagram.com
+URL;TYPE=Twitter:www.twitter.com
+URL;TYPE=Youtube:www.youtube.com
+END:VCARD

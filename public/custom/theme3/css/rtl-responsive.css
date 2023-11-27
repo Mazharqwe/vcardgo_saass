@@ -1,0 +1,101 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+
+@media (min-width:992px) {
+
+
+    .desk-only {
+        display: block !important;
+    }
+
+    .mobile-only {
+        display: none !important;
+    }
+
+}
+
+
+@media screen and (max-width:1199px) {
+    :root {
+        --h1: normal 700 40px/1 var(--Strawford);
+        --h2: normal 700 32px/1 var(--Strawford);
+        --h3: normal 700 26px/1 var(--Strawford);
+        --h4: normal 700 20px/1 var(--Strawford);
+        --h5: normal 700 18px/1 var(--Strawford);
+        --h6: normal 700 16px/1 var(--Strawford);
+    }
+
+}
+
+@media screen and (max-width:991px) {
+    :root {
+        --h1: normal 700 36px/1 var(--Strawford);
+        --common-text: normal 400 14px/1.4 var(--Strawford);
+    }
+}
+
+
+
+@media screen and (max-width:575px) {
+    :root {
+        --h2: normal 700 28px/1 var(--Strawford);
+        --h3: normal 700 24px/1 var(--Strawford);
+        --h4: normal 700 22px/1 var(--Strawford);
+        --h5: normal 700 20px/1 var(--Strawford);
+    }
+
+
+}
+
+@media screen and (max-width:420px) {
+    #view_theme13 .social-list li a {
+        width: 45px;
+        height: 45px;
+    }
+
+    #view_theme13 .social-list li a svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    #view_theme13 .social-list li a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #view_theme13.profile-section .profile-cover img {
+        height: 100%;
+    }
+
+    #view_theme13.profile-section+.gallery-section {
+        margin-top: -200px;
+    }
+
+    #view_theme13.profile-section {
+        padding-bottom: 200px;
+    }
+
+    #view_theme13 .picker__holder {
+        left: 0px;
+    }
+
+    #view_theme13 .bussiness-hour ul li {
+        width: 100%;
+        float: unset;
+        font-size: 16px;
+    }
+    #view_theme13 .contact-section ul li a {
+        font-size: 18px;
+     }
+     #view_theme13 .contact-section ul li a span:first-child{
+        width: 40px;
+        height: 40px;
+     }
+     #view_theme13 .contact-section ul li a span img {
+        width: 24px;
+        height: 24px;
+    }
+}

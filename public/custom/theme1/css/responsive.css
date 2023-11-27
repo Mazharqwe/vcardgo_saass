@@ -1,0 +1,90 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+
+@media (min-width:992px) {
+
+
+  .desk-only {
+    display: block !important;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+
+}
+
+
+@media screen and (max-width:1199px) {
+  :root {
+    --h1: normal 700 40px/1 var(--Strawford);
+    --h2: normal 700 32px/1 var(--Strawford);
+    --h3: normal 700 26px/1 var(--Strawford);
+    --h4: normal 700 20px/1 var(--Strawford);
+    --h5: normal 700 18px/1 var(--Strawford);
+    --h6: normal 700 16px/1 var(--Strawford);
+  }
+  #view_theme11  .picker__holder {
+    left:0px;
+      
+  }
+
+}
+
+@media screen and (max-width:991px) {
+  :root {
+    --h1: normal 700 36px/1 var(--Strawford);
+    --common-text: normal 400 14px/1.4 var(--Strawford);
+  }
+  #view_theme11 .picker__holder {
+    left:0px;
+      
+  }
+}
+
+
+
+@media screen and (max-width:575px) {
+  :root {
+    --h2: normal 700 28px/1 var(--Strawford);
+    --h3: normal 700 24px/1 var(--Strawford);
+    --h4: normal 700 22px/1 var(--Strawford);
+    --h5: normal 700 20px/1 var(--Strawford);
+  }
+
+
+}
+
+@media screen and (max-width:420px) {
+  #view_theme11 .greetings-desk .user-text-avatar img{
+    width: 240px;
+    height: 240px;
+  }
+  #view_theme11 .social-list li a{
+    width: 45px;
+    height: 45px;
+  }
+  #view_theme11 .social-list li a svg{
+    width: 20px;
+    height: 20px;
+  }
+  #view_theme11 .social-list li a img{
+    width: 20px;
+    height: 20px;
+  }
+  #view_theme11 .picker__holder{
+      left:0px;
+  }
+}
+
+@media (max-width: 1500px) {
+  #view_theme11 .picker__holder {
+    left:0px;
+    min-width: unset;
+    max-width: 290px;
+  }
+}
+

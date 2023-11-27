@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+REV:2021-11-10T09:22:18Z
+N;CHARSET=utf-8:Ab;Xt;;;
+FN;CHARSET=utf-8:Xt Ab
+ORG;CHARSET=utf-8:Sissesqo
+TITLE;CHARSET=utf-8:Web Developer
+ROLE;CHARSET=utf-8:Data Protection Officer
+EMAIL;INTERNET:info@jeroendesloovere.be
+TEL;PREF;WORK:1234121212
+TEL;WORK:123456789
+ADR;WORK;POSTAL;CHARSET=utf-8:;;street;worktown;;workpostcode;Belgium
+LABEL:street, worktown, workpostcode Belgium
+END:VCARD

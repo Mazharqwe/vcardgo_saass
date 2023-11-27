@@ -1,0 +1,66 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+
+@media (min-width:992px) {
+    .desk-only {
+        display: block !important;
+    }
+    .mobile-only {
+        display: none !important;
+    }
+}
+@media screen and (max-width:1199px) {
+    :root {
+        --h1: normal 700 40px/1 var(--Strawford);
+        --h2: normal 700 32px/1 var(--Strawford);
+        --h3: normal 700 26px/1 var(--Strawford);
+        --h4: normal 700 20px/1 var(--Strawford);
+        --h5: normal 700 18px/1 var(--Strawford);
+        --h6: normal 700 16px/1 var(--Strawford);
+    }
+}
+@media screen and (max-width:991px) {
+    :root {
+        --h1: normal 700 36px/1 var(--Strawford);
+        --common-text: normal 400 14px/1.4 var(--Strawford);
+    }
+}
+@media screen and (max-width:575px) {
+    :root {
+        --h2: normal 700 28px/1 var(--Strawford);
+        --h3: normal 700 24px/1 var(--Strawford);
+        --h4: normal 700 22px/1 var(--Strawford);
+        --h5: normal 700 20px/1 var(--Strawford);
+    }
+}
+@media screen and (max-width:420px) {
+    #view_theme17 .social-list li a {
+        width: 45px;
+        height: 45px;
+    }
+    #view_theme17 .social-list li a svg {
+        width: 20px;
+        height: 20px;
+    }
+    #view_theme17 .social-list li a img {
+        width: 20px;
+        height: 20px;
+    }
+    #view_theme17 .make-appointment {
+        padding-bottom: 120px;
+    }
+    #view_theme17 .make-appointment+.social {
+        margin-top: -80px;
+    }
+    #view_theme17 .bussiness-hour ul li {
+        width: 100%;
+        float: unset;
+        font-size: 16px;
+      }
+      #view_theme17 .picker__holder {
+        right: 0px;
+      }
+}

@@ -1,0 +1,284 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+@media screen and (max-width:500px) {
+  #view_css .qr-scaner-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width:420px) {
+  :root .theme12-v1, :root .theme12-v2, :root .theme12-v3, :root .theme12-v4, :root .theme12-v5 {
+    --h1: normal 600 32px/1 var(--Strawford);
+    --h2: normal 600 26px/1 var(--Strawford);
+    --h3: normal 600 24px/1 var(--Strawford);
+    --h4: normal 600 20px/1 var(--Strawford);
+    --h5: normal 600 18px/1 var(--Strawford);
+    --h6: normal 600 16px/1 var(--Strawford);
+  }
+
+  /**** HOME PAGE CSS ****/
+  #view_css .padding-top {
+    padding-top: 40px;
+  }
+
+  #view_css .padding-bottom {
+    padding-bottom: 40px;
+  }
+
+  #view_css .section-title {
+    margin-bottom: 20px;
+  }
+
+  #view_css .qr-image {
+    height: 200px;
+    width: 200px;
+  }
+
+  #view_css .title-svg {
+    top: -25px;
+    margin: 0 auto 10px;
+    height: 45px;
+    width: 45px;
+  }
+
+  #view_css .title-svg svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  #view_css .title-svg img {
+    height: 25px;
+    width: 25px;
+  }
+
+  #view_css .home-banner-section .home-banner {
+    border-radius: 15px 15px 30px 30px;
+    -webkit-border-radius: 15px 15px 30px 30px;
+    -moz-border-radius: 15px 15px 30px 30px;
+    -ms-border-radius: 15px 15px 30px 30px;
+    -o-border-radius: 15px 15px 30px 30px;
+  }
+
+  #view_css .client-image {
+    height: 130px;
+    width: 130px;
+  }
+
+  #view_css .client-image-section {
+    margin-top: -60px;
+  }
+
+  #view_css .client-contact {
+    padding-top: 20px;
+  }
+
+  #view_css .client-contact .contactlink a span {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+
+  #view_css .client-contact .contactlink a .contact-svg svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  #view_css .client-contact .contactlink a .contact-svg img {
+    height: 20px;
+    width: 20px;
+  }
+
+  #view_css .client-contact .contactlink a .contact-svg {
+    height: 40px;
+    width: 40px;
+  }
+
+  #view_css .client-contact p {
+    margin-bottom: 20px;
+  }
+
+  #view_css .daily-hours-content .daily-hours-inner ul li p {
+    font-size: 13px;
+  }
+
+  #view_css .daily-hours-content .daily-hours-inner ul li p span{
+    font-size: 13px;
+  }
+
+  #view_css .text-radio .radio {
+    max-width: 100%;
+  }
+
+  #view_css .text-radio .radio-left {
+    padding-left: 0px;
+  }
+
+  #view_css .service-section .service-card-wrapper .service-card {
+    max-width: 100%;
+  }
+
+  #view_css .service-card-wrapper .service-card:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+
+  #view_css .close-btn {
+    padding: 14px 20px;
+  }
+
+  #view_css .qr-scaner-wrapper {
+    max-width: 100%;
+  }
+
+  #view_css .qr-code-text p {
+    font-size: 14px;
+  }
+
+  #view_css .service-card-inner .service-icon {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto 15px;
+  }
+
+  #view_css .service-card-inner p {
+    margin: 12px 0px;
+  }
+
+  #view_css .service-card-inner .service-icon svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  #view_css .service-card-inner .service-icon img {
+    height: 25px;
+    width: 25px;
+  }
+
+  #view_css .close-search {
+    height: 26px;
+    width: 26px;
+  }
+
+  #view_css .share-card-wrapper .section-title {
+    margin-bottom: 20px;
+  }
+
+  #view_css .qr-scaner-wrapper .qr-code-text {
+    margin: 30px 0px;
+  }
+
+  #view_css .card-social-icons li {
+    height: 40px;
+    width: 40px;
+  }
+
+  #view_css .card-social-icons li a svg {
+    height: 20px;
+    width: 20px;
+  }
+
+  #view_css .card-social-icons li a img {
+    height: 20px;
+    width: 20px;
+  }
+
+  #view_css .qr-scaner-wrapper .card-social-icons {
+    margin-bottom: 15px;
+  }
+
+  #view_css .form-btn-group .btn {
+    padding: 14px 15px;
+  }
+
+  #view_css .appo-form-details {
+    padding: 30px 0px 10px;
+  }
+
+  #view_css .social-icon-wrapper {
+    max-width: 100%;
+  }
+
+  #view_css .social-icon-wrapper li a svg {
+    height: 25px;
+    width: 25px;
+  }
+
+  #view_css .social-icon-wrapper li a img {
+    height: 25px;
+    width: 25px;
+  }
+
+  #view_css .social-icon-wrapper li {
+    height: 45px;
+    width: 45px;
+  }
+
+  #view_css .picker__holder {
+    max-width: 300px;
+    top: 30px;
+    left: 80px;
+  }
+
+  #view_css .appointment-btn {
+    padding-left: 0px;
+  }
+
+  #view_css .testimonial-itm-inner .testi-client-img img {
+    border-radius: 170px;
+  }
+
+  /**** HOME PAGE CSS end****/
+}
+
+@media screen and (max-width:375px) {
+  :root .theme12-v1, :root .theme12-v2, :root .theme12-v3, :root .theme12-v4, :root .theme12-v5 {
+    --h1: normal 600 32px/1 var(--Strawford);
+    --h2: normal 600 26px/1 var(--Strawford);
+    --h3: normal 600 24px/1 var(--Strawford);
+    --h4: normal 600 20px/1 var(--Strawford);
+    --h5: normal 600 18px/1 var(--Strawford);
+    --h6: normal 600 16px/1 var(--Strawford);
+  }
+
+  /**** HOME PAGE CSS ****/
+  #view_css .appointment-section .appointment-date {
+    flex-direction: column;
+  }
+
+  #view_css .appointment-date .date-label, .appointment-hour .hour-label {
+    max-width: 100%;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+
+  #view_css .appointment-hour .hour-label {
+    max-width: 100%;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+
+  #view_css .text-radio .radio input[type=radio]+.radio-label {
+    padding: 14px 10px;
+  }
+
+  #view_css .picker__holder {
+    max-width: 300px;
+    left:10px;
+    top: 80px;
+  }
+
+  #view_css .appointment-btn {
+    padding-left: 0px;
+  }
+
+  #view_css .daily-hours-content .daily-hours-inner ul li p {
+    font-size: 12px;
+  }
+
+  #view_css .daily-hours-content .daily-hours-inner ul li p span{
+    font-size: 13px;
+  }
+
+  /**** HOME PAGE CSS end****/
+}

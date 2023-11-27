@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+REV:2023-06-08T14:28:40Z
+N;CHARSET=utf-8:;Wedding;;;
+FN;CHARSET=utf-8:Wedding
+ORG;CHARSET=utf-8:Wedding
+ROLE;CHARSET=utf-8:Wedding Planner at Wedding
+TEL;TYPE#WORK,VOICE:+91 1122334455
+EMAIL;INTERNET:kontakt@alpesh.com
+URL;TYPE=Twitter:https://twitter.com
+URL;TYPE=Youtube:https://youtube.com
+URL;TYPE=Facebook:https://facebook.com
+URL;TYPE=Instagram:https://instagram.com
+END:VCARD

@@ -1,0 +1,187 @@
+/*================================================================================================*/
+/*=================[                                                            ]=================*/
+/*=================[    !!!!!!!!   CSS CREATED BY RAJODIYA INFOTECH  !!!!!!!!   ]=================*/
+/*=================[                                                            ]=================*/
+/*================================================================================================*/
+@media screen and (max-width:500px){ 
+  /**** HOME PAGE CSS ****/ 
+  #view_theme9 .client-info-section .more-card-btn {
+    flex-direction: column;
+  }  
+  #view_theme9 .client-info-section .more-card-btn .btn:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  #view_theme9 .service-section .service-card-wrapper .service-card {
+    max-width: 100%;
+  }
+  #view_theme9 .service-section .service-card-wrapper .service-card:not(:last-of-type){
+    margin-bottom: 15px;
+  }
+  #view_theme9 .qr-scaner-wrapper {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:420px){ 
+  :root .theme20-v1,:root .theme20-v2,:root .theme20-v3,:root .theme20-v4,:root .theme20-v5 {
+    --h1: normal 600 32px/1 var(--Strawford);
+    --h2: normal 600 26px/1 var(--Strawford);
+    --h3: normal 600 24px/1 var(--Strawford);
+    --h4: normal 600 20px/1 var(--Strawford);
+    --h5: normal 600 18px/1 var(--Strawford);
+    --h6: normal 600 16px/1 var(--Strawford);
+  } 
+  /**** HOME PAGE CSS ****/ 
+  #view_theme9 .padding-top{
+    padding-top: 40px;
+  }
+  #view_theme9 .padding-bottom{
+    padding-bottom: 40px;
+  }
+  #view_theme9 .section-title {
+    margin-bottom: 20px;
+  } 
+  #view_theme9 .client-info-section .client-text {
+    margin: 15px 0px 30px;
+  }  
+  #view_theme9 .client-contact .contactlink a span {
+    font-size: 19px;
+  }
+  #view_theme9 .scanner-section .scanner-wrapper .scanner-info h2 {
+    margin-bottom: 15px;
+  }
+  #view_theme9 .service-card-inner h5 {
+    margin-bottom: 15px;
+  }
+  #view_theme9 .card-social-icons li a svg {
+    height: 22px;
+    width: 22px;
+  }
+  #view_theme9 .card-social-icons li a img {
+    height: 22px;
+    width: 22px;
+  }
+  #view_theme9 .card-social-icons li {
+    height: 40px;
+    width: 40px;
+  }  
+  #view_theme9 .appo-form-details {
+    padding: 30px 0px 10px;
+  }
+  #view_theme9 .close-search {
+    height: 26px;
+    width: 26px;
+  }  
+  #view_theme9 .client-contact .contactlink:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  #view_theme9 .daily-hours-content .daily-hours-inner ul li {
+    font-size: 13px;
+  }
+  #view_theme9 .daily-hours-content .daily-hours-inner ul li p{
+    font-size: 13px;
+  }
+  #view_theme9 .daily-hours-content .daily-hours-inner ul li span{
+    font-size: 13px;
+  }
+  #view_theme9 .social-icons-section .social-icon-wrapper {
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  #view_theme9 .text-radio .radio {
+    max-width: 100%;
+  }    
+  #view_theme9 .text-radio .radio-left {
+    padding-left: 0px;
+  }
+  #view_theme9 .close-btn {
+    padding: 14px 20px;
+  }  
+  #view_theme9 .qr-code-text p {
+    font-size: 14px;
+  }  
+  #view_theme9 .share-card-wrapper .section-title {
+    margin-bottom: 20px;
+  }
+  #view_theme9 .qr-scaner-wrapper .qr-code-text {
+    margin: 30px 0px;
+  }  
+  #view_theme9 .qr-scaner-wrapper .card-social-icons {
+    margin-bottom: 15px;
+  }  
+  #view_theme9 .qr-image {
+    height: 200px;
+    width: 200px;
+  }
+  #view_theme9 .appointment-detail .form-group {
+    max-width: 100%;
+  }
+  #view_theme9 .appointment-detail .form-group:not(:last-of-type) {
+    padding-right: 0px;
+  }
+  #view_theme9 .form-group {
+    margin-bottom: 15px;
+  }
+  #view_theme9 .form-btn-group .btn{
+    padding: 14px 15px;
+  }
+  #view_theme9 .service-card-inner .service-icon svg {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto 15px;
+  }
+  #view_theme9 .service-card-inner .service-icon img {
+    height: 30px;
+    width: 30px;
+    margin: 0 auto 15px;
+  }
+  #view_theme9 .picker__holder {
+    max-width: 300px;
+    top: 0px;
+   
+  }
+  #view_theme9 .picker {
+    width: 90%;
+  }
+  #view_theme9 .testi-client-img img {
+    border-radius: 105px;
+  }
+  /**** HOME PAGE CSS end****/
+}
+@media screen and (max-width:370px){  
+  /**** HOME PAGE CSS ****/ 
+  #view_theme9 .appointment-section .appointment-date {
+    flex-direction: column;
+  }
+  #view_theme9 .appointment-date .date-label, .appointment-hour .hour-label {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }  
+  #view_theme9 .social-icon-wrapper {
+    max-width: 100%;
+  }  
+  #view_theme9 .scanner-section .scanner-wrapper {
+    flex-direction: column;
+  }  
+  #view_theme9 .scanner-section .scanner-wrapper .scanner-info {
+    max-width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  #view_theme9 .scanner-section .scanner-wrapper .scanner-image-inner {
+    width: 100%;
+  }
+  #view_theme9 .scanner-image-inner .scan-img {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+  }
+  #view_theme9 .social-icons-section .social-icon-wrapper li a svg {
+    height: 22px;
+    width: 22px;
+  }
+  #view_theme9 .social-icons-section .social-icon-wrapper li a img {
+    height: 22px;
+    width: 22px;
+  }
+  /**** HOME PAGE CSS end****/
+}

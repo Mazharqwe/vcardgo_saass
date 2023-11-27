@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+REV:2023-06-02T09:23:46Z
+N;CHARSET=utf-8:;Doctor;;;
+FN;CHARSET=utf-8:Doctor
+ORG;CHARSET=utf-8:Doctor
+ROLE;CHARSET=utf-8:Doctor at Doctored
+TEL;TYPE#WORK,VOICE:+91 1122334455
+EMAIL;INTERNET:kontakt@alpesh.com
+URL;TYPE=Twitter:https://twitter.com
+URL;TYPE=Youtube:https://youtube.com
+URL;TYPE=Facebook:https://facebook.com
+URL;TYPE=Instagram:https://instagram.com
+END:VCARD

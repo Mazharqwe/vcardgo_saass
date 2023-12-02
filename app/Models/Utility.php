@@ -796,6 +796,143 @@ class Utility extends Model
         return $settings;
     }
 
+    public static function frontendSettings()
+    {
+
+        // if (self::$storesettings == null) {
+            $data = DB::table('settings');
+            if (\Auth::check()) {
+                if (\Auth::user()->type == 'super admin') {
+                    $data = Utility::getFrontendSetting();
+                    //$data = $data->where('created_by', '=', \Auth::user()->creatorId())->get();
+
+                    if (count($data) == 0) {
+                        $data = Utility::getFrontendSetting();
+                    }
+                } else {
+                    $data = Utility::getFrontendSetting(2);
+                    if (count($data) == 0) {
+                        $data = Utility::getFrontendSetting();
+                    }
+
+                }
+
+            } else {
+                $data = Utility::getFrontendSetting();
+
+            // }
+            self::$storesettings = $data;
+        }
+
+        $settings = [
+            "site_currency" => "USD",
+            "site_currency_symbol" => "$",
+            "site_currency_symbol_position" => "pre",
+            "site_date_format" => "M j, Y",
+            "site_time_format" => "g:i A",
+            "company_name" => "",
+            "company_address" => "",
+            "company_city" => "",
+            "company_state" => "",
+            "company_zipcode" => "",
+            "company_country" => "",
+            "company_telephone" => "",
+            "company_email" => "",
+            "company_email_from_name" => "",
+            "invoice_prefix" => "#INVO",
+            "invoice_color" => "ffffff",
+            "proposal_prefix" => "#PROP",
+            "proposal_color" => "ffffff",
+            "bill_prefix" => "#BILL",
+            "bill_color" => "ffffff",
+            "customer_prefix" => "#CUST",
+            "vender_prefix" => "#VEND",
+            "footer_text" => "vCardGo-SaaS",
+            "footer_notes" => "",
+            "invoice_template" => "template1",
+            "bill_template" => "template1",
+            "proposal_template" => "template1",
+            "registration_number" => "",
+            "vat_number" => "",
+            "default_language" => "en",
+            "enable_stripe" => "",
+            "enable_paypal" => "",
+            "paypal_mode" => "",
+            "paypal_client_id" => "",
+            "paypal_secret_key" => "",
+            "stripe_key" => "",
+            "stripe_secret" => "",
+            "decimal_number" => "2",
+            "tax_type" => "",
+            "shipping_display" => "on",
+            "journal_prefix" => "#JUR",
+            "display_landing_page" => "on",
+            "title_text" => "vCardgo-SaaS",
+            "company_logo" => 'logo-dark.png',
+            "company_logo_light" => 'logo-light.png',
+            "company_favicon" => 'favicon.png',
+            "signup_button" => "on",
+            "email_verification" => 'on',
+            "color" => "theme-3",
+            "cust_theme_bg" => "on",
+            "cust_darklayout" => "off",
+            "SITE_RTL" => "",
+            "storage_setting" => "local",
+            "local_storage_validation" => "jpg,jpeg,png",
+            "local_storage_max_upload_size" => "250000",
+            "s3_key" => "",
+            "s3_secret" => "",
+            "s3_region" => "",
+            "s3_bucket" => "",
+            "s3_url" => "",
+            "s3_endpoint" => "",
+            "s3_max_upload_size" => "",
+            "s3_storage_validation" => "",
+            "wasabi_key" => "",
+            "wasabi_secret" => "",
+            "wasabi_region" => "",
+            "wasabi_bucket" => "",
+            "wasabi_url" => "",
+            "wasabi_root" => "",
+            "wasabi_max_upload_size" => "",
+            "wasabi_storage_validation" => "",
+            "google_calender_id" => "",
+            "google_calender_json_file" => "",
+            "Google_Calendar" => "",
+            'enable_cookie' => 'on',
+            'necessary_cookies' => 'on',
+            'cookie_logging' => 'on',
+            'cookie_title' => 'We use cookies!',
+            'cookie_description' => 'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it',
+            'strictly_cookie_title' => 'Strictly necessary cookies',
+            'strictly_cookie_description' => 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
+            'more_information_description' => 'For any queries in relation to our policy on cookies and your choices,',
+            'contactus_url' => '#',
+            'chatgpt_key' => '',
+            "disable_lang" => '',
+            'company_default_language' => 'en',
+            'mail_driver' => '',
+            'mail_host' => '',
+            'mail_port' => '',
+            'mail_username' => '',
+            'mail_password' => '',
+            'mail_encryption' => '',
+            'mail_from_address' => '',
+            'mail_from_name' => '',
+            'timezone' => 'Asia/Kolkata',
+            'RECAPTCHA_MODULE'=>'no',
+            'NOCAPTCHA_SITEKEY'=>'',
+            'NOCAPTCHA_SECRET'=>''
+        ];
+
+        foreach (self::$storesettings as $row) {
+            $settings[$row->name] = $row->value;
+
+        }
+
+        return $settings;
+    }
+
     public static function getStorageSetting()
     {
         if (self::$storagesettings == null) {
@@ -844,6 +981,20 @@ class Utility extends Model
         }
         return self::$getsettings;
     }
+
+    public static function getFrontendSetting()
+    {
+        // if (self::$getsettings == null) {
+            $data = DB::table('settings');
+            $data = $data->where('created_by', '=', 2)->get();
+            if (count($data) == 0) {
+                $data = DB::table('settings')->where('created_by', '=', 2)->get();
+            }
+            self::$getsettings = $data;
+        // }
+        return self::$getsettings;
+    }
+
 
     public static function getSettingById($id)
     {

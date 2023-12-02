@@ -16178,7 +16178,7 @@ body.theme-3 {
 }
 
 body.theme-3 .bg-primary {
-    background: linear-gradient(141.55deg, #6FD943 3.46%, #6FD943 99.86%), #6FD943 !important;
+    background: linear-gradient(141.55deg, #6FD943 3.46%, #6FD943 99.86%), #6FD943 ;
 }
 
 body.theme-3 .dash-header .drp-language .drp-text,
@@ -16235,7 +16235,7 @@ body.theme-3 .text-primary {
 }
 
 body.theme-3 .list-group-item.active {
-    background: linear-gradient(141.55deg, #6FD943 3.46%, #6FD943 99.86%), #6FD943 !important;
+    /* background: linear-gradient(141.55deg, #6FD943 3.46%, #6FD943 99.86%), #6FD943 !important; */
 }
 
 body.theme-3 .progress-bar:not([class*="bg-"]),
@@ -18118,7 +18118,7 @@ body.theme-10 .card .card-header h5:after, body.theme-10 .card .card-header .h5:
     color: #778290;
     fill: rgba(114, 103, 239, 0.2);
 }
-
+/* 
 .dash-sidebar .dash-link {
     display: block;
     padding: 13px 20px;
@@ -18126,7 +18126,7 @@ body.theme-10 .card .card-header h5:after, body.theme-10 .card .card-header .h5:
     position: relative;
     font-size: 13px;
     font-weight: 600;
-}
+} */
 
 .dash-sidebar .dash-link .dash-mtext::after {
     content: "";
@@ -21800,9 +21800,9 @@ body:not(.minimenu) .dash-sidebar .dash-submenu .dash-submenu .dash-submenu > .d
 }
 
 .card {
-    box-shadow: 0 6px 30px rgba(182, 186, 203, 0.3);
+    /* box-shadow: 0 6px 30px rgba(182, 186, 203, 0.3); */
     margin-bottom: 24px;
-    transition: box-shadow 0.2s ease-in-out;
+    /* transition: box-shadow 0.2s ease-in-out; */
 }
 
 .card .card-header {

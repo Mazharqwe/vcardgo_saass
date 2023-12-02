@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="asset('frontend/assets/css/theme.css')"><?php /**PATH D:\Projects\vcardgo-saas\resources\views/frontend/includes/theme-css.blade.php ENDPATH**/ ?>

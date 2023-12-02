@@ -933,7 +933,7 @@ a.b-brand {
 }
 
 .logo {
-    max-width: 160px;
+    max-width: 5rem;
     /* height: 50px; */
     width: 100%;
 }

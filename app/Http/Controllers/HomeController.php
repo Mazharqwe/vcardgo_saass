@@ -280,7 +280,8 @@ class HomeController extends Controller
                 } else {
                     $get_section = LandingPageSection::orderBy('section_order', 'ASC')->get();
                     $plans = Plan::get();
-                    return view('layouts.landing', compact('plans', 'get_section'));
+                    $settings = Utility::frontendSettings();
+                    return view('frontend.index', compact('plans', 'get_section', 'settings'));
                 }
             }
 

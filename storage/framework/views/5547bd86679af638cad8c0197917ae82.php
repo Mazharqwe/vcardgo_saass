@@ -1,0 +1,1 @@
+<script src="<?php echo e(asset('assets/js/jquery.min.js')); ?>"></script><?php /**PATH D:\Projects\vcardgo-saas\resources\views/frontend/includes/jquery.blade.php ENDPATH**/ ?>

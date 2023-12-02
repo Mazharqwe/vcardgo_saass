@@ -1,0 +1,43 @@
+:root {
+    --theme-1: linear-gradient(141.55deg, #0CAF60 3.46%, #0CAF60 99.86%), #0CAF60;
+    --theme-2: linear-gradient(141.55deg, #584ED2 3.46%, #584ED2 99.86%),
+        #584ED2;
+    --theme-3: linear-gradient(141.55deg, #6FD943 3.46%, #6FD943 99.86%),
+        #6FD943;
+    --theme-4: linear-gradient(141.55deg, #145388 3.46%, #145388 99.86%),
+        #145388;
+    --theme-5: linear-gradient(141.55deg, #B9406B 3.46%, #B9406B 99.86%),
+        #B9406B;
+    --theme-6: linear-gradient(141.55deg, #008ECC 3.46%, #008ECC 99.86%),
+        #008ECC;
+    --theme-7: linear-gradient(141.55deg, #922C88 3.46%, #922C88 99.86%),
+        #922C88;
+    --theme-8: linear-gradient(141.55deg, #C0A145 3.46%, #C0A145 99.86%),
+        #C0A145;
+    --theme-9: linear-gradient(141.55deg, #48494B 3.46%, #48494B 99.86%),
+        #48494B;
+    --theme-10: =linear-gradient(141.55deg, #0C7785 3.46%, #0C7785 99.86%), #0C7785
+}
+.theme-1:before {
+    background: var(--theme-1);
+}  .theme-2:before {
+    background: var(--theme-2);
+}  .theme-3:before {
+    background: var(--theme-3);
+}  .theme-4:before {
+    background: var(--theme-4);
+}  .theme-5:before {
+    background: var(--theme-5);
+}  .theme-6:before {
+    background: var(--theme-6);
+}  .theme-7:before {
+    background: var(--theme-7);
+}  .theme-8:before {
+    background: var(--theme-8);
+}  .theme-9:before {
+    background: var(--theme-9);
+}
+
+.theme-10:before {
+    background: var(--theme-10);
+}

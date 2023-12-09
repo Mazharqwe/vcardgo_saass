@@ -1,4 +1,4 @@
-<section
+<section id="services"
 class="elementor-section elementor-top-section elementor-element elementor-element-3c83bdc elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default pxl-row-scroll-none pxl-bg-color-none pxl-section-overlay-none"
 data-id="3c83bdc" data-element_type="section"
 data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
@@ -55,7 +55,7 @@ style="width: 1349px; left: 0px;">
                                                     </div>
                                                 </div>
                                                 <div class="pxl-icon"> <i
-                                                        class="fas fa-"></i>
+                                                        class="fa fa-angle-right"></i>
                                                 </div>
                                             </h5>
                                         </div>
@@ -76,7 +76,7 @@ style="width: 1349px; left: 0px;">
 </div>
                                                 </div>
                                                 <div class="pxl-icon"> <i
-                                                        class="fas fa-forward"></i>
+                                                        class="fa fa-angle-right"></i>
                                                 </div>
                                             </h5>
                                         </div>
@@ -97,7 +97,7 @@ style="width: 1349px; left: 0px;">
 </div>
                                                 </div>
                                                 <div class="pxl-icon"> <i
-                                                        class="fas fa-forward"></i>
+                                                        class="fa fa-angle-right"></i>
                                                 </div>
                                             </h5>
                                         </div>
@@ -118,7 +118,7 @@ style="width: 1349px; left: 0px;">
                                                     </div>
                                                 </div>
                                                 <div class="pxl-icon"> <i
-                                                        class="fas fa-forward"></i>
+                                                        class="fa fa-angle-right"></i>
                                                 </div>
                                             </h5>
                                         </div>
@@ -138,7 +138,7 @@ style="width: 1349px; left: 0px;">
 </div>
                                                 </div>
                                                 <div class="pxl-icon"> <i
-                                                        class="fas fa-forward"></i>
+                                                        class="fa fa-angle-right"></i>
                                                 </div>
                                             </h5>
                                         </div>
@@ -156,9 +156,9 @@ style="width: 1349px; left: 0px;">
                                 data-widget_type="pxl_banner.default">
                                 <div class="elementor-widget-container">
                                     <div class="pxl-banner pxl-banner4">
-                                        <div class="pxl-box-inner wow fadeInLeft"
+                                        <div id="aboutRow" class="pxl-box-inner wow fadeInLeft"
                                             data-wow-delay="100ms"
-                                            style="visibility: hidden; animation-delay: 100ms; animation-name: none;">
+                                            style="visibility: visible; animation-delay: 100ms; animation-name: none;">
                                             <div
                                                 class="pxl-item--imgprimary">
                                                 <img decoding="async"

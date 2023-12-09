@@ -12,11 +12,11 @@ class PlanController extends Controller
     public function index()
     {
         if(\Auth::user()->can('manage plan'))
-        {
+        { 
             \App::setLocale(\Auth::user()->currentLanguage());
             $users = \Auth::user();
             $currantLang = $users->currentLanguage();
-            $plans                 = Plan::get();
+            $plans = Plan::get();
             $admin_payment_setting = Utility::getAdminPaymentSetting();
 
             return view('plan.index', compact('plans', 'admin_payment_setting','currantLang','users'));

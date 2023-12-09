@@ -1491,8 +1491,8 @@
     border-radius: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    background: linear-gradient(90deg, #f0346e 30%, #fe6c4e 80%);
-    border: 10px solid #ffcece;
+    background: #000;
+    border: 10px solid #fff;
     transform-origin: center;
     transform-style: preserve-3d;
     -webkit-transition: all .3s cubic-bezier(.62, .21, .45, 1.52);
@@ -1763,7 +1763,7 @@ h4,
 h5,
 h6 {
     font-family: epilogue, sans-serif;
-    color: var(--link-color);
+    color: black;
     font-weight: 700;
     margin: 0 0 15px;
     clear: both;
@@ -8315,7 +8315,7 @@ body.rtl .pxl-process2 .pxl-item--step {
     right: 75px;
     width: 300%;
     height: 100%;
-    background: linear-gradient(90deg, #000712 30%, #6d8cf3 100%);
+    background: linear-gradient(90deg, #234476 30%, #6d8cf3 100%);
     -webkit-border-radius: 0 300px 300px 0;
     -khtml-border-radius: 0 300px 300px 0;
     -moz-border-radius: 0 300px 300px 0;
@@ -8602,7 +8602,7 @@ body.rtl .pxl-process2 .pxl-item--step {
     width: 81px;
     border-radius: 100px;
     position: absolute;
-    background: linear-gradient(90deg, #ef326f, #fe6c4e);
+    /* background: linear-gradient(90deg, #ef326f, #fe6c4e); */
     left: 10%;
     transform: rotate(40deg);
     top: 25px
@@ -8615,8 +8615,8 @@ body.rtl .pxl-process2 .pxl-item--step {
 }
 
 .pxl-banner.pxl-banner4 .pxl-item--imgprimary {
-    mask-image: url(../img/image.png);
-    -webkit-mask-image: url(../img/image.png);
+    mask-image: url(../images/image.png);
+    -webkit-mask-image: url(../images/image.png);
     -ms-mask-image: url(../images/image.png);
     -o-mask-image: url(../images/image.png);
     -webkit-mask-repeat: no-repeat;
@@ -28222,7 +28222,7 @@ body.rtl .pxl-icon-box2 .pxl-item--icon {
 }
 
 .pxl-testimonial-carousel1 .pxl-swiper-dots {
-    margin-top: 60px
+    margin-top: 20px
 }
 
 .pxl-testimonial-carousel1 .pxl-carousel-inner {
@@ -28309,7 +28309,7 @@ body.rtl .pxl-icon-box2 .pxl-item--icon {
 }
 
 .pxl-testimonial-carousel1 .pxl-item--inner {
-    background-color: #fff8e1;
+    background: linear-gradient(90deg, #234476 30%, #6d8cf3 100%);
     -webkit-border-radius: 300px;
     -khtml-border-radius: 300px;
     -moz-border-radius: 300px;
@@ -28320,7 +28320,8 @@ body.rtl .pxl-icon-box2 .pxl-item--icon {
     padding: 75px 160px;
     padding-top: 100px;
     margin-top: 50px;
-    position: relative
+    position: relative;
+    color: white;
 }
 
 @media(max-width:1200px) {
@@ -28396,7 +28397,7 @@ body.rtl .pxl-icon-box2 .pxl-item--icon {
 .pxl-testimonial-carousel1 .pxl-item--inner .pxl-item--desc {
     font-size: 28px;
     font-weight: 500;
-    color: #000;
+    color: #fff;
     line-height: 1.6;
     margin-bottom: 30px
 }
@@ -30210,7 +30211,7 @@ body.rtl .pxl-progressbar-1 .pxl--percentage {
 }
 
 .pxl-pricing1.default .pxl-content .pxl-item-inner .pxl-item--feature .pxl-feature-list .pxl-feature-text:before {
-    content: '\f152';
+    content: '>';
     font-family: Caseicon;
     position: absolute;
     top: 40%;

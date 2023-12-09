@@ -1,4 +1,4 @@
-<div id="pxl-main">
+<div id="pxl-main" >
     <div class="elementor-container">
         <div class="row pxl-content-wrap no-sidebar">
             <div id="pxl-content-area" class="pxl-content-area pxl-content-page col-12">
@@ -7,7 +7,7 @@
                         <div class="pxl-entry-content clearfix">
                             <div data-elementor-type="wp-page" data-elementor-id="17"
                                 class="elementor elementor-17">
-                                <section
+                                <section id="services"
                                     class="elementor-section elementor-top-section elementor-element elementor-element-1d25370 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default pxl-row-scroll-none pxl-bg-color-none pxl-section-overlay-none"
                                     data-id="1d25370" data-element_type="section"
                                     data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
@@ -57,7 +57,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/real-time-activity/">Real
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/real-time-activity/">Real
                                                                                                 Time
                                                                                                 Activity</a>
                                                                                         </h3>
@@ -87,7 +87,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/software-development/">Software
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/software-development/">Software
                                                                                                 Development</a>
                                                                                         </h3>
                                                                                         <div
@@ -116,7 +116,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/digital-strategies/">
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/digital-strategies/">
                                                                                                 Modernize Your Networking</a>
                                                                                         </h3>
                                                                                         <div
@@ -141,7 +141,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/perfect-ui-ux/">
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/perfect-ui-ux/">
                                                                                                 Personalization at Its Finest</a>
                                                                                         </h3>
                                                                                         <div
@@ -166,7 +166,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/real-time-activity/">
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/real-time-activity/">
                                                                                                 Mobile-Ready and Responsive
                                                                                                 </a>
                                                                                         </h3>
@@ -192,7 +192,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/software-development/">Software
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/software-development/">Software
                                                                                                 Development</a>
                                                                                         </h3>
                                                                                         <div
@@ -221,7 +221,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/digital-strategies/">Digital
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/digital-strategies/">Digital
                                                                                                 Strategies</a>
                                                                                         </h3>
                                                                                         <div
@@ -250,7 +250,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/perfect-ui-ux/">Perfect
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/perfect-ui-ux/">Perfect
                                                                                                 UI/UX</a>
                                                                                         </h3>
                                                                                         <div
@@ -279,7 +279,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/real-time-activity/">Real
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/real-time-activity/">Real
                                                                                                 Time
                                                                                                 Activity</a>
                                                                                         </h3>
@@ -309,7 +309,7 @@
                                                                                         <h3
                                                                                             class="pxl-item--title">
                                                                                             <a
-                                                                                                href="https://demo.bravisthemes.com/sasnio/service/software-development/">Software
+                                                                                                #="https://demo.bravisthemes.com/sasnio/service/software-development/">Software
                                                                                                 Development</a>
                                                                                         </h3>
                                                                                         <div
@@ -367,7 +367,7 @@
                                                         <div id="pxl_image-d531512-4174"
                                                             class="pxl-image-single  style-default wow fadeInRight"
                                                             data-wow-delay="300ms"
-                                                            style="visibility: hidden; animation-delay: 300ms; animation-name: none;">
+                                                            style="visibility: visible; animation-delay: 300ms; animation-name: none;">
                                                             <div class="pxl-item--inner "
                                                                 data-wow-delay="120ms">
                                                                 <div class="pxl-item--image"
@@ -482,3 +482,21 @@
             </div>
         </div>
     </div>
+    <script>
+        $(document).ready(function() {
+            // Adjust the selector to match the structure of your accordion
+            $('.pxl-accordion').each(function() {
+                var accordion = $(this);
+                accordion.find('.pxl-item--title').click(function() {
+                    var content = $(this).find('.pxl-item--content');
+                    content.slideToggle();
+                    accordion.find('.pxl-item--content').not(content).slideUp();
+                });
+            });
+        });
+    </script>
+    <style>
+        .pxl-item--content {
+            display: none;
+        }
+    </style>

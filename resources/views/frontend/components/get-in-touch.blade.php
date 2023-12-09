@@ -72,7 +72,7 @@ style="width: 1349px; left: 0px;">
                 <div class="elementor-widget-container">
                     <div id="pxl-pxl_button-27a6fb0-8268"
                         class="pxl-button " data-wow-delay="ms"> <a
-                            href="https://demo.bravisthemes.com/sasnio/contact-us/"
+                            href="#"
                             class="btn pxl-icon-active btn-nina  pxl-icon--left"
                             data-wow-delay="ms"> <span class="pxl--btn-text"
                                 data-text="Get in Touch"> <span

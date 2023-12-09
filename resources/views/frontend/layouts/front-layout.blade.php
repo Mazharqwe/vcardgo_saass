@@ -31,6 +31,7 @@ data-elementor-device-mode="laptop" style="overflow: auto;">
            <div class="pxl-circle-2"></div>
        </div>
    </div>
+   @include('frontend.includes.navbar')
    @yield('content')
         
       </div>

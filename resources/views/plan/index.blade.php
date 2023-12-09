@@ -1,5 +1,6 @@
 @extends('layouts.admin')
 @php
+    $settings = Utility::settings();
     $dir = asset(Storage::url('uploads/plan'));
     $admin_payment_setting = Utility::getAdminPaymentSetting();
 @endphp

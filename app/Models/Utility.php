@@ -1066,9 +1066,9 @@ class Utility extends Model
     }
     public static function getAdminPaymentSetting()
     {
+        $settings = [];
         if (self::$adminpaymentsettings == null) {
             $data = \DB::table('admin_payment_settings');
-            $settings = [];
             if (\Auth::check()) {
                 $user_id = 1;
                 $data = $data->where('created_by', '=', $user_id);

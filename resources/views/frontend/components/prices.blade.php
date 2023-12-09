@@ -1,4 +1,4 @@
-<section
+<section id="pricing"
 class="elementor-section elementor-top-section elementor-element elementor-element-2015da9 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default pxl-row-scroll-none pxl-bg-color-none pxl-section-overlay-none"
 data-id="2015da9" data-element_type="section"
 data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}"
@@ -55,7 +55,7 @@ style="width: 1349px; left: 0px;">
                                 </div>
                                 <div class="pxl-item--button"> <a
                                         class="btn-shape-primary btn-flex"
-                                        href="https://demo.bravisthemes.com/sasnio/pricing-plans/#">
+                                        #="https://demo.bravisthemes.com/sasnio/pricing-plans/#">
                                         <span>Purchase Now</span> </a></div>
                                 <div class="pxl-border-bottom"></div>
                                 <div class="pxl-border-bottom-hover"></div>
@@ -117,7 +117,7 @@ style="width: 1349px; left: 0px;">
                                 </div>
                                 <div class="pxl-item--button"> <a
                                         class="btn-shape-primary btn-flex"
-                                        href="https://demo.bravisthemes.com/sasnio/pricing-plans/#">
+                                        #="https://demo.bravisthemes.com/sasnio/pricing-plans/#">
                                         <span>Purchase Now</span> </a></div>
                                 <div class="pxl-border-bottom"></div>
                                 <div class="pxl-border-bottom-hover"></div>
@@ -179,7 +179,7 @@ style="width: 1349px; left: 0px;">
                                 </div>
                                 <div class="pxl-item--button"> <a
                                         class="btn-shape-primary btn-flex"
-                                        href="https://demo.bravisthemes.com/sasnio/pricing-plans/#">
+                                        #="https://demo.bravisthemes.com/sasnio/pricing-plans/#">
                                         <span>Purchase Now</span> </a></div>
                                 <div class="pxl-border-bottom"></div>
                                 <div class="pxl-border-bottom-hover"></div>

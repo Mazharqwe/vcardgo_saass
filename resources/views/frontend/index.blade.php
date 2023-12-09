@@ -322,13 +322,54 @@
         .pxl-item--meta-theme-4{
             background: var(--theme-4);
         }
+
+
+        #boxRow-theme-1::before{
+            background: var(--theme-1);
+            
+        }
+        #boxRow-theme-2::before{
+            background: var(--theme-2);
+            
+        }
+        #boxRow-theme-3::before{
+            background: var(--theme-3);
+            
+        }
+        #boxRow-theme-4::before{
+            background: var(--theme-4);
+            
+        }
+        #boxRow-theme-5::before{
+            background: var(--theme-5);
+            
+        }
+        #boxRow-theme-6::before{
+            background: var(--theme-6);
+            
+        }
+        #boxRow-theme-7::before{
+            background: var(--theme-7);
+            
+        }
+        #boxRow-theme-8::before{
+            background: var(--theme-8);
+            
+        }
+        #boxRow-theme-9::before{
+            background: var(--theme-9);
+            
+        }
+        #boxRow-theme-10::before{
+            background: var(--theme-10);
+            
+        }
      
     </style>
 @endsection
 @section('content')
     <div id="theme" class="d-none" data-settings="{{ $settings['color'] }}">
     </div>
-    @include('frontend.includes.navbar')
     @include('frontend.components.hero')
     @include('frontend.components.services')
     @include('frontend.components.footer')
@@ -347,6 +388,7 @@
         let customebutton = $('.btn');
         let pxlItemText = $('#pxl-content-theme');
         let pxlPricing = $('.pxl-item--meta');
+        let aboutRow = $('#aboutRow');
 
 
         // Function to add theme classes
@@ -365,11 +407,13 @@
         addThemeClasses(pxlDate, 'pxl-item--date-' + theme);
         addThemeClasses(blogLayout, 'blog-layout3-' + theme);
         addThemeClasses(pxlPricing, 'pxl-item--meta-'+theme);
+        // addThemeClasses(aboutRow, 'pxl-box-inner-'+theme);
         
         
         // Assign unique IDs
         blogLayout.attr('id', 'blog-layout3-' + theme);
         footer.attr('id', 'footer-' + theme);
         pxlItemText.attr('id', 'pxl-text-'+theme);
+        aboutRow.attr('id', 'boxRow-'+theme);
     });
 </script>

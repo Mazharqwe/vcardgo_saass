@@ -1,5 +1,5 @@
 .elementor-widget-container .wow {
-    visibility: hidden;
+    visibility: visible;
 }
 .elementor-widget-container .wow.animated {
     visibility: visible;

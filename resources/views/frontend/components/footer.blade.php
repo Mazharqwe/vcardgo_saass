@@ -69,19 +69,19 @@
                                                                 <div class="pxl-icon-list pxl-icon1 style-box1 "
                                                                     data-wow-delay="ms"> <a
                                                                         class="elementor-repeater-item-223c4fd"
-                                                                        href="https://demo.bravisthemes.com/sasnio/#">
+                                                                        href="#">
                                                                         <i aria-hidden="true"
                                                                             class="fab fa-facebook"></i> </a> <a
                                                                         class="elementor-repeater-item-323d505"
-                                                                        href="https://demo.bravisthemes.com/sasnio/#">
+                                                                        href="##">
                                                                         <i aria-hidden="true"
                                                                             class="fab fa-google-plus-g"></i>
                                                                     </a> <a class="elementor-repeater-item-06a6468"
-                                                                        href="https://demo.bravisthemes.com/sasnio/#">
+                                                                        href="##">
                                                                         <i aria-hidden="true"
                                                                             class="fab fa-twitter"></i> </a> <a
                                                                         class="elementor-repeater-item-9dc6063"
-                                                                        href="https://demo.bravisthemes.com/sasnio/#">
+                                                                        href="##">
                                                                         <i aria-hidden="true"
                                                                             class="fab fa-linkedin"></i> </a>
                                                                 </div>
@@ -116,26 +116,26 @@
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="/">
                                                                                 <span>                                                                                Home</span> </a></div>
                                                                     </div>
-                                                                    <div class="pxl--item " data-wow-delay="ms">
+                                                                    {{-- <div class="pxl--item " data-wow-delay="ms">
                                                                         <div class="pxl-item--icon"> <i
                                                                                 aria-hidden="true"
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="##">
                                                                                 <span>Projects</span>
                                                                             </a></div>
-                                                                    </div>
+                                                                    </div> --}}
                                                                     <div class="pxl--item " data-wow-delay="ms">
                                                                         <div class="pxl-item--icon"> <i
                                                                                 aria-hidden="true"
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="#servies">
                                                                                 <span>
                                                                                     Services</span> </a>
                                                                         </div>
@@ -146,7 +146,7 @@
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="#pricing">
                                                                                 <span>Pricing</span>
                                                                             </a></div>
                                                                     </div>
@@ -156,7 +156,7 @@
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="#pxl-footer-elementor">
                                                                                 <span>Contact</span>
                                                                             </a></div>
                                                                     </div>
@@ -191,7 +191,7 @@
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/contact-us/">
+                                                                                href="#pxl-footer-elementor">
                                                                                 <span>Contact Us</span> </a>
                                                                         </div>
                                                                     </div>
@@ -201,27 +201,27 @@
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="#">
                                                                                 <span>Privacy Policy</span> </a>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="pxl--item " data-wow-delay="ms">
+                                                                    {{-- <div class="pxl--item " data-wow-delay="ms">
                                                                         <div class="pxl-item--icon"> <i
                                                                                 aria-hidden="true"
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="#">
                                                                                 <span>App Download</span> </a>
                                                                         </div>
-                                                                    </div>
+                                                                    </div> --}}
                                                                     <div class="pxl--item " data-wow-delay="ms">
                                                                         <div class="pxl-item--icon"> <i
                                                                                 aria-hidden="true"
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="##">
                                                                                 <span>How It Works</span> </a>
                                                                         </div>
                                                                     </div>
@@ -231,7 +231,7 @@
                                                                                 class="far fa-angle-right"></i>
                                                                         </div>
                                                                         <div class="pxl-item--text el-empty"> <a
-                                                                                href="https://demo.bravisthemes.com/sasnio/#">
+                                                                                href="##">
                                                                                 <span>Terms &amp;
                                                                                     Conditions</span> </a></div>
                                                                     </div>

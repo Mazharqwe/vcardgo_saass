@@ -1,6 +1,6 @@
 @php
     // get theme color
-    $setting = App\Models\Utility::settings();
+    $setting = App\Models\Utility::frontendSettings();
     $layout_setting = App\Models\Utility::getLayoutsSetting();
     $color = !empty($setting['color']) ? $setting['color'] : 'theme-3';
     $company_logo = \App\Models\Utility::GetLogo();
@@ -32,7 +32,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicon -->
 
-    <link rel="icon" href="{{ $logo . '/favicon.png' }}" type="image/x-icon" />
+    <link rel="icon" href="{{ $logo . '/2_favicon.png' }}" type="image/x-icon" />
     <!-- font css -->
     <link rel="stylesheet" href="{{ asset('assets/fonts/tabler-icons.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/fonts/feather.css') }}">
@@ -90,14 +90,14 @@
             <header class="dash-header">
                 <nav class="navbar navbar-expand-md default">
                     <div class="container-fluid pe-2">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="{{url('/')}}">
                             @if ($setting['cust_darklayout'] == 'on')
-                                <img class="logo"
-                                    src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-light.png') . '?' . time() }}"
+                                <img class="logo img-fluid"
+                                    src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo_1.jpg') . '?' . time() }}"
                                     alt="" loading="lazy" />
                             @else
                                 <img class="logo"
-                                    src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png') . '?' . time() }}"
+                                    src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo_2.jpg') . '?' . time() }}"
                                     alt="" loading="lazy" />
                             @endif
                         </a>

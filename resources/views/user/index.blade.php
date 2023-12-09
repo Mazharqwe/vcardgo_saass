@@ -172,10 +172,10 @@
                 <a href="#" class="btn-addnew-project" data-ajax-popup="true" data-size="md"
                     data-title="{{ __('Create New User') }}" data-url="{{ route('users.create') }}">
                     <div class="badge bg-primary proj-add-icon">
-                        <i class="ti ti-plus"></i>
+                        <i class="ti text-light ti-plus"></i>
                     </div>
                     <h6 class="mt-4 mb-2">{{ __('New User') }}</h6>
-                    <p class="text-muted text-center">{{ __('Click here to add New User') }}</p>
+                    <p class="text-center">{{ __('Click here to add New User') }}</p>
                 </a>
             </div>
         @endcan

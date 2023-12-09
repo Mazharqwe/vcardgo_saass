@@ -1,426 +1,328 @@
 @php
-   // $logo=asset(Storage::url('uploads/logo'));
-   $logo=\App\Models\Utility::get_file('uploads/logo/');
-   $setting = App\Models\Utility::settings();
-   $set_cookie = App\Models\Utility::cookie_settings();
-   $langSetting=App\Models\Utility::langSetting();
+    // $logo=asset(Storage::url('uploads/logo'));
+    $logo = \App\Models\Utility::get_file('uploads/logo/');
+    $setting = App\Models\Utility::settings();
+    $set_cookie = App\Models\Utility::cookie_settings();
+    $langSetting = App\Models\Utility::langSetting();
 @endphp
 <!DOCTYPE html>
 <html lang="en" dir="{{ $setting['SITE_RTL'] == 'on' ? 'rtl' : '' }}">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>{{(Utility::getValByName('title_text')) ? Utility::getValByName('title_text') : config('app.name', 'vCardGo SaaS')}}</title>
-      
-      <link rel="icon" href="{{ $logo. '/favicon.png' }}" type="image/x-icon" />
-      
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="{{ asset('landing/assets/css/style.css') }}">
-      <!-- Stylesheets -->
-      <!-- <link rel="stylesheet" href="./assets/css/docs.theme.min.css"> -->
-      <!-- Owl Stylesheets -->
-      <link rel="stylesheet" href="{{ asset('landing/assets/css/owl.carousel.min.css') }}">
-      <link rel="stylesheet" href="{{ asset('landing/assets/css/owl.theme.default.min.css') }}">
-      <script src="{{ asset('landing/assets/js/jquery.min.js') }}"></script>
-      <script src="{{ asset('landing/assets/js/owl.carousel.js') }}"></script>
 
-      @if ($setting['SITE_RTL'] == 'on')
-        <link rel="stylesheet" href="{{ asset('assets/css/style-rtl.css') }}">
-    @endif
-    @if (isset($setting['cust_darklayout']) && $setting['cust_darklayout'] == 'on')
-        <link rel="stylesheet" href="{{ asset('assets/css/style-dark.css') }}">
-    @else
-        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    @endif
-    <link rel="stylesheet" href="{{ asset('custom/css/custom.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{ Utility::getValByName('title_text') ? Utility::getValByName('title_text') : config('app.name', 'vCardGo SaaS') }}
+    </title>
 
-<style type="text/css">
-   .logo{
-      max-width: 160px;
-      width: 100%;
-      height: 50px;
-      padding: 0.33594rem 0; 
-   }
-    .logo img {
-       width: 100%;
-       height: 100%;
-       /* object-fit: scale-down; */
-   } 
-</style>
+    <link rel="icon" href="{{ $logo . '/2_favicon.png' }}" type="image/x-icon" />
+    @include('frontend.includes.head')
 
-   </head>
-   <body translate="no">
-      <nav class="custom_navbar">
-         <div class="first_side_vector">
-            <img src="{{ asset('landing/assets/img/vector0.svg') }}" alt="vector0" class="img-fluid">
-         </div>
-         <div class="first_right_side_vector">
-            <img src="{{ asset('landing/assets/img/vector.svg') }}" alt="vector" class="img-fluid">
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <div class="logo">
-                     <!-- <h4>vCard<span>Go</span></h4> -->
-                     @if ($setting['cust_darklayout'] == 'on')
-                        <img src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-light.png').'?'.time() }}" alt=""
-                              class="img-fluid" />
-                     @else
-                        <img src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png').'?'.time() }}" alt=""
-                              class="img-fluid" />
-                     @endif
-                  </div>
-                  <ul class="nav-links">
-                     <li><a href="#">Overview</a></li>
-                     <li><a href="#">Functions</a></li>
-                     <li><a href="#">Pricing</a></li>
-                     <li><a href="#">Contact</a></li>
-                     <li class="try-btn "><a href="{{ route('login') }}">{{__('Log in')}}</a></li>
-                     @if(Utility::getValByName('signup_button') == 'on')
-                     <li class="try-btn"><a href="{{ route('register') }}">{{__('Register')}}</a></li>
-                     @endif
-                  </ul>
-                  <div class="burger">
-                     <div class="line1"></div>
-                     <div class="line2"></div>
-                     <div class="line3"></div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </nav>
-      <section class="blog">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-md-12">
-                  <div class="blog-section">
-                     <div class="blog-heading">
-                        <h3>
-                           The world’s advanced<br> <span> contact tech cards  </span>
-                        </h3>
-                        <p class="text_gray">
-                           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                        <div class="btns_main">
-                           <a href="{{ route('login') }}" class="theme-bg try_theme_btn">
-                           <span class="text-white">Try vCardGo</span>
-                           </a>
-                           <a href="#" class="btn second_btn try_theme_btn">
-                           <span class="text-dark">Find more functions</span>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-md-12">
-                  <div class="blog-image text-center">
-                     <img src="{{ asset('landing/assets/img/hero.png') }}" alt="hero" class="img-fluid">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="logo_slider theme-bg">
-         <div class="container">
-            <div class="row">
-               <div class="logo_slider_main">
-                  <ul>
-                     <li>
-                        <div class="logo_slider_img">
-                           <h4>vCard<span>Go</span></h4>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="logo_slider_img">
-                           <h4>vCard<span>Go</span></h4>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="logo_slider_img">
-                           <h4>vCard<span>Go</span></h4>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="logo_slider_img">
-                           <h4>vCard<span>Go</span></h4>
-                        </div>
-                     </li>
-                     <li>
-                        <div class="logo_slider_img">
-                           <h4>vCard<span>Go</span></h4>
-                        </div>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="services-section" id="services">
-         <div class="container">
-            <div class="mb-5 text-center">
-               <div class="bg_vector">
-                  <img src="{{ asset('landing/assets/img/bg_vector.svg') }}" alt="bg_vector" class="img-fluid">
-               </div>
-               <div class="blog-heading">
-                  <h3>
-                     The world’s advanced<br> <span> contact tech cards  </span>
-                  </h3>
-                  <p class="section_paragragh">
-                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                  </p>
-               </div>
-            </div>
-            <div class="row align-items-center justify-content-center">
-               <div class="d-md-flex d-block align-items-center justify-content-center w-100">
-                  <div class="product-details">
-                     <div class="product-image">
-                        <img src="{{ asset('landing/assets/img/Icon.svg') }}" alt="Icon1" class="img-fluid hover-hide">
-                        <img src="{{ asset('landing/assets/img/Icon-black.svg') }}" alt="Icon1" class="img-fluid hover-show">
-                     </div>
-                     <div class="product-text">
-                        <p>The world’s advanced
-                           <span>
-                           contact tech cards 
-                           </span>
-                        </p>
-                     </div>
-                  </div>
-                  <div class="product-details">
-                     <div class="product-image">
-                        <img src="{{ asset('landing/assets/img/Icon.svg') }}" alt="Icon1" class="img-fluid hover-hide">
-                        <img src="{{ asset('landing/assets/img/Icon-black.svg') }}" alt="Icon1" class="img-fluid hover-show">
-                     </div>
-                     <div class="product-text">
-                        <p>The world’s advanced
-                           <span>
-                           contact tech cards 
-                           </span>
-                        </p>
-                     </div>
-                  </div>
-                  <div class="product-details">
-                     <div class="product-image">
-                        <img src="{{ asset('landing/assets/img/Icon.svg') }}" alt="Icon1" class="img-fluid hover-hide">
-                        <img src="{{ asset('landing/assets/img/Icon-black.svg') }}" alt="Icon1" class="img-fluid hover-show">
-                     </div>
-                     <div class="product-text">
-                        <p>The world’s advanced
-                           <span>
-                           contact tech cards 
-                           </span>
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="position_relative">
-                  <div class="mockup_img">
-                     <img src="{{ asset('landing/assets/img/mockup.png') }}" alt="mockup" class="img-fluid">
-                  </div>
-                  <div class="bg_vector_two">
-                     <img src="{{ asset('landing/assets/img/bg_vector.svg') }}" alt="bg_vector" class="img-fluid">
-                  </div>
-                  <div class="vector_2">
-                     <img src="{{ asset('landing/assets/img/Vector2.svg') }}" alt="Vector2" class="img-fluid">
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-            </div>
-         </div>
-      </section>
-      <section class="blog">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-6 col-md-12 respo-order-2">
-                  <div class="blog-section">
-                     <div class="blog-heading">
-                        <h3>
-                           The world’s advanced
-                           <br>
-                           <span> contact tech cards </span>
-                        </h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                        <div class="btns_main">
-                           <a href="{{ route('login') }}" class="btn theme-bg try_theme_btn">
-                           <span class="text-white">Try vCardGo</span>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-md-12">
-                  <div class="blog-image text-center">
-                     <img src="{{ asset('landing/assets/img/blog1.png') }}" alt="blog" class="img-fluid">
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="blog">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-6 col-md-12">
-                  <div class="blog-image">
-                     <img src="{{ asset('landing/assets/img/hero.png') }}" alt="hero" class="img-fluid">
-                     <div class="blog-image_bg_img">
-                        <img src="{{ asset('landing/assets/img/bg_vector.svg') }}" alt="bg_vector" class="img-fluid">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-md-12 respo-order-2">
-                  <div class="blog-section">
-                     <div class="blog-heading">
-                        <h3>
-                           The world’s advanced
-                           <br>
-                           <span> contact tech cards </span>
-                        </h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                        <div class="btns_main">
-                           <a href="{{ route('login') }}" class="btn theme-bg try_theme_btn">
-                              <span class="text-white">Try vCardGo</span>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="vector_3">
-                  <img src="{{ asset('landing/assets/img/Vector3.svg') }}" alt="Vector2" class="img-fluid">
-               </div>
-            </div>
-         </div>
-      </section>
-      <section class="blog all_techcard_img"  id="demos">
-         <div class="container">
-            <div class="row align-items-center">
-               <div class="col-lg-12 col-md-12 m-auto">
-                  <div class="blog-section">
-                     <div class="blog-heading text-center">
-                        <h3>
-                           The world’s advanced
-                           <br>
-                           <span> contact tech cards </span>
-                        </h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="columns">
-                  <ul class="owl-carousel owl-theme">
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard1.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard01.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard2.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard02.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard3.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard03.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard4.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard04.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard5.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard05.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard6.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard06.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard7.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard07.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard8.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard08.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard9.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard09.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard10.png') }}" alt="techcard1" class="img-fluid"></li>
-                     <li class="items"><img src="{{ asset('landing/assets/img/cards/vcard010.png') }}" alt="techcard1" class="img-fluid"></li>
-                  </ul>
-               </div>
-               <div class="vector_4">
-                  <img src="{{ asset('landing/assets/img/bg_vector.svg') }}" alt="Vector2" class="img-fluid">
-               </div>
-               <script>
-                  $(document).ready(function() {
-                    $('.owl-carousel').owlCarousel({
-                      loop:true,
-                      nav:true,
-                      margin: 10,
-                      responsiveClass: true,
-                      rtl: true,
-                      responsive: {
-                        0: {
-                          items: 1,
-                          nav: true
-                        },
-                        600: {
-                          items: 3,
-                          nav: false
-                        },
-                        1000: {
-                          items: 6,
-                          nav: true,
-                          loop: true,
-                          margin: 20
-                        }
-                      }
-                    })
-                  })
-               </script>
-            </div>
-         </div>
-         </div>
-         <nav class="custom_navbar">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                     <div class="logo footer_logo">
-                        <h4><img src="{{$logo.'/logo-dark.png'}}"></h4>
-                     </div>
-                     <ul class="nav-links footer-nav-links ">
-                        <li class="text-muted">&copy; &nbsp;{{ date('Y') }}&nbsp;{{ isset($langSetting['footer_text']) ? $langSetting['footer_text'] : config('app.name', 'vCardGo-SaaS') }}</li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </nav>
-      </section>
-      <script
-         src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
-      <script id="rendered-js">
-         const navSlide = () => {
-           const burger = document.querySelector('.burger');
-           const body = document.querySelector('body');
-           const nav = document.querySelector('.nav-links');
-           const navLinks = document.querySelectorAll('.nav-links li');
-         
-           //Toggle Nav
-           burger.addEventListener('click', () => {
-             nav.classList.toggle('nav-active');
-         
-             //Animate Links
-             navLinks.forEach((link, index) => {
-               if (link.style.animation) {
-                 link.style.animation = '';
-               } else {
-                 link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-         
-               }
-             });
-         
-             //burger animation
-             burger.classList.toggle('toggle');
-             body.classList.toggle('scroll-hidden');
-         
-         
-           });
-         };
-         
-         navSlide();
-         //# sourceURL=pen.js
-      </script>
-   </body>
-   @if($set_cookie['enable_cookie'] == 'on')
-   @include('layouts.cookie_consent')
-   @endif
+</head>
+<body class="home page-template-default page page-id-17 theme-sasnio woocommerce-js pxl-redux-page body-default-font heading-default-font bd-px-header--transparent site-color-gradient woocommerce-layout-grid elementor-default elementor-kit-7 elementor-page elementor-page-17 e--ua-blink e--ua-chrome e--ua-webkit pxl-header-sticky"
+data-elementor-device-mode="laptop" style="overflow: auto;">
+<div id="pxl-wapper" class="pxl-wapper">
+   <div id="pxl-loadding" class="pxl-loader pxl-loader-gradient style-app is-loaded">
+       <div class="pxl-loader-effect">
+           <div class="pxl-circle-1"></div>
+           <div class="pxl-circle-2"></div>
+       </div>
+   </div>
+         @include('frontend.includes.navbar')
+         @include('frontend.components.hero')
+         @include('frontend.components.services')
+         @include('frontend.components.footer')
+      </div>
+    <script>
+        window.RS_MODULES = window.RS_MODULES || {};
+        window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+        window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+        window.RS_MODULES.defered = true;
+        window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+        window.RS_MODULES.type = 'compiled';
+    </script>
+    <script>
+        (function() {
+            function maybePrefixUrlField() {
+                const value = this.value.trim()
+                if (value !== '' && value.indexOf('http') !== 0) {
+                    this.value = 'http://' + value
+                }
+            }
+            const urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]')
+            for (let j = 0; j < urlFields.length; j++) {
+                urlFields[j].addEventListener('blur', maybePrefixUrlField)
+            }
+        })();
+    </script>
+    <script type="text/javascript">
+        (function() {
+            var c = document.body.className;
+            c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+            document.body.className = c;
+        })();
+    </script>
+    <link rel="stylesheet" id="elementor-post-3168-css"
+        href="{{asset('frontend/assets/css/post-3168.css')}}" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="elementor-post-3530-css"
+        href="{{asset('frontend/assets/css/post-3530.css')}}" type="text/css"
+        media="all">
+    <link rel="stylesheet" id="rs-plugin-settings-css"
+        href="{{asset('frontend/assets/css/rs6.css')}}" type="text/css" media="all">
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/swv.min.js')}}"
+        id="swv-js"></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+        /* <![CDATA[ */
+        var wpcf7 = {
+            "api": {
+                "root": "https:\/\/demo.bravisthemes.com\/sasnio\/wp-json\/",
+                "namespace": "contact-form-7\/v1"
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/contact-form-7.min.js')}}"
+        id="contact-form-7-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/rbtools.min.js')}}" defer="" async=""
+        id="tp-tools-js"></script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/rs6.min.js')}}"
+        defer="" async="" id="revmin-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/sasnio-elementor-edit.min.js')}}"
+        id="sasnio-elementor-edit-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/sasnio-parallax-scroll.min.js')}}"
+        id="sasnio-parallax-scroll-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/sasnio-elementor.min.js')}}"
+        id="sasnio-elementor-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/split-text.min.js')}}"
+        id="split-text-lib-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/scroll-trigger.min.js')}}"
+        id="scroll-trigger-lib-js"></script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/gsap.min.js')}}"
+        id="gsap-lib-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/scroll-smoother.min.js')}}"
+        id="scroll-smoother-lib-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/curtains.min.js')}}" id="curtains-list-js">
+    </script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/magnific-popup.min.js')}}"
+        id="magnific-popup-js"></script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/wow.min.js')}}"
+        id="wow-animate-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/nice-select.min.js')}}" id="nice-select-js">
+    </script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/pxl-woocommerce.min.js')}}"
+        id="pxl-woocommerce-js"></script>
+    <script type="text/javascript" id="pxl-main-js-extra">
+        /* <![CDATA[ */
+        var main_data = {
+            "ajax_url": "https:\/\/demo.bravisthemes.com\/sasnio\/wp-admin\/admin-ajax.php"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/pxl-main.min.js')}}" id="pxl-main-js">
+    </script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/imagesloaded.min.js')}}"
+        id="imagesloaded-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/isotope.pkgd.min.js')}}" id="isotope-js">
+    </script>
+    <script type="text/javascript" id="pxl-post-grid-js-extra">
+        /* <![CDATA[ */
+        var main_data = {
+            "ajax_url": "https:\/\/demo.bravisthemes.com\/sasnio\/wp-admin\/admin-ajax.php"
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/grid.js')}}"
+        id="pxl-post-grid-js"></script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/tilt.min.js')}}"
+        id="tilt-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/tweenmax.min.js')}}" id="pxl-tweenmax-js">
+    </script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/pxl-effects.js')}}" id="sasnio-effects-js">
+    </script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/swiper.min.js')}}"
+        id="swiper-js"></script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/carousel.js')}}"
+        id="pxl-swiper-js')}}"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/waypoints.min.js')}}"
+        id="elementor-waypoints-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/jquery-numerator.min.js')}}"
+        id="jquery-numerator-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/counter.min.js')}}" id="pxl-counter-js">
+    </script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/counter.js')}}"
+        id="sasnio-counter-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/parallax-move-mouse.js')}}"
+        id="pxl-parallax-move-mouse-js"></script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/accordion.js')}}"
+        id="sasnio-accordion-js"></script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/cookie.js')}}"
+        id="pxl-cookie-js"></script>
+    <script type="text/javascript" defer=""
+        src="{{asset('frontend/assets/js/forms.js')}}" id="mc4wp-forms-api-js">
+    </script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/webpack.runtime.min.js')}}"
+        id="elementor-webpack-runtime-js"></script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/frontend-modules.min.js')}}"
+        id="elementor-frontend-modules-js"></script>
+    <script type="text/javascript" src="{{asset('frontend/assets/js/core.min.js')}}"
+        id="jquery-ui-core-js"></script>
+    <script type="text/javascript" id="elementor-frontend-js-before">
+        /* <![CDATA[ */
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close",
+                "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+                "a11yCarouselPrevSlideMessage": "Previous slide",
+                "a11yCarouselNextSlideMessage": "Next slide",
+                "a11yCarouselFirstSlideMessage": "This is the first slide",
+                "a11yCarouselLastSlideMessage": "This is the last slide",
+                "a11yCarouselPaginationBulletMessage": "Go to slide"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Mobile Portrait",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Mobile Landscape",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet": {
+                        "label": "Tablet Portrait",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet Landscape",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "laptop": {
+                        "label": "Laptop",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "widescreen": {
+                        "label": "Widescreen",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                }
+            },
+            "version": "3.15.3",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_dom_optimization": true,
+                "e_optimized_assets_loading": true,
+                "e_optimized_css_loading": true,
+                "additional_custom_breakpoints": true,
+                "e_swiper_latest": true,
+                "landing-pages": true,
+                "e_global_styleguide": true
+            },
+            "urls": {
+                "assets": "https:\/\/demo.bravisthemes.com\/sasnio\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "swiperClass": "swiper",
+            "settings": {
+                "page": [],
+                "editorPreferences": []
+            },
+            "kit": {
+                "active_breakpoints": ["viewport_mobile", "viewport_mobile_extra", "viewport_tablet",
+                    "viewport_tablet_extra", "viewport_laptop"
+                ],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description"
+            },
+            "post": {
+                "id": 3484,
+                "title": "Sasnio%20%E2%80%93%20Saas%20Software%20%26%20Startup%20WordPress%20Theme",
+                "excerpt": "",
+                "featuredImage": false
+            }
+        };
+        /* ]]> */
+    </script>
+    <script type="text/javascript"
+        src="{{asset('frontend/assets/js/frontend.min.js')}}"
+        id="elementor-frontend-js"></script>
+</body>
+@if ($set_cookie['enable_cookie'] == 'on')
+    @include('layouts.cookie_consent')
+@endif
+
 </html>

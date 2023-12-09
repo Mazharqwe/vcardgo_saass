@@ -13,9 +13,9 @@
     @endphp
 @section('content')
     <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-12">
             <div class="card">
-                <div class="card-header">
+                <div class="card-header appointments-calender">
                     <div class="row">
                         <div class="col-lg-6">
                             <h5>{{__('Calendar')}}</h5>
@@ -36,10 +36,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="card ">
+        <div class="col-lg-12">
+            <div class="card current-date-appointments">
                 <div class="card-body ">
-                    <h4 class="mb-4">{{ __('Appointments') }}</h4>
+                    <h4 class="mb-4 text-light">{{ __('Appointments') }}</h4>
                     <ul class="event-cards list-group list-group-flush mt-3 w-100 ">
                         @foreach ($arrayJson as $appointment)
                             @php

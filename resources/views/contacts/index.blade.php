@@ -28,7 +28,7 @@
                     {{-- //business Display Start --}}
                     <ul class="list-unstyled">
                         <li class="dropdown dash-h-item drp-language">
-                            <a class="dash-head-link dropdown-toggle arrow-none me-0 cust-btn shadow-sm border border-success"
+                            <a class="dash-head-link dropdown-toggle arrow-none me-0 cust-btn"
                                 data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                                 aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                 data-bs-original-title="{{ __('Select your bussiness') }}">

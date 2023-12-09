@@ -33,7 +33,7 @@
                         {{-- //business Display Start --}}
                         <ul class="list-unstyled mb-lg-0">
                             <li class="dropdown dash-h-item drp-language">
-                                <a class="dash-head-link dropdown-toggle arrow-none me-0 cust-btn shadow-sm border border-success"
+                                <a class="dash-head-link dropdown-toggle arrow-none me-0 cust-btn"
                                     data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
                                     aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="bottom"
                                     data-bs-original-title="{{ __('Select your bussiness') }}">
@@ -163,33 +163,10 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-8">
-            <div class="card">
-                <div class="card-header">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h5>{{ __('Calendar') }}</h5>
-                        </div>
-                        <div class="col-lg-6">
-                            @if (isset($settings['Google_Calendar']) && $settings['Google_Calendar'] == 'on')
-                                <select class="form-control" name="is_live" id="is_live"
-                                    style="float: right;width: 170px;" onchange="get_data()">
-                                    <option value="1">{{ __('Google Calender') }}</option>
-                                    <option value="0" selected="true">{{ __('Local Calender') }}</option>
-                                </select>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div id='calendar' class='calendar'></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="card ">
+        <div class="col-lg-12">
+            <div class="card current-date-appointments" >
                 <div class="card-body ">
-                    <h4 class="">{{ __('Appointments') }}</h4>
+                    <h5 class="">{{ __('Appointments') }}</h5>
                     <small>{{ __('This data is only for current month ') }}</small>
                     <ul class="event-cards list-group list-group-flush mt-3 w-100 ">
                         @foreach ($arrayJson as $appointment)
@@ -220,6 +197,29 @@
                                 value="{{ $appointment['business_id'] }}">
                         @endforeach
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12">
+            <div class="card ">
+                <div class="card-header appointments-calender">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h5>{{ __('Calendar') }}</h5>
+                        </div>
+                        <div class="col-lg-6">
+                            @if (isset($settings['Google_Calendar']) && $settings['Google_Calendar'] == 'on')
+                                <select class="form-control" name="is_live" id="is_live"
+                                    style="float: right;width: 170px;" onchange="get_data()">
+                                    <option value="1">{{ __('Google Calender') }}</option>
+                                    <option value="0" selected="true">{{ __('Local Calender') }}</option>
+                                </select>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id='calendar' class='calendar'></div>
                 </div>
             </div>
         </div>

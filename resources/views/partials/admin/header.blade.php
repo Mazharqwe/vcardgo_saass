@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="{{ asset('assets/fonts/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/fonts/material.css') }}">
     <link rel="stylesheet" href="{{asset('custom/libs/summernote/summernote-bs4.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/custom-dashboard.css')}}">
      @stack('css-page')
   
     

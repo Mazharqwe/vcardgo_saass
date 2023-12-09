@@ -10,13 +10,13 @@
 @push('css-page')
     <style>
         .shareqrcode img {
-            width: 65%;
-            height: 65%;
+            width: 30%;
+            height: 30%;
         }
 
         .shareqrcode canvas {
-            width: 65%;
-            height: 65%;
+            width: 30%;
+            height: 30%;
         }
     </style>
 @endpush
@@ -29,94 +29,16 @@
             <div class="row justify-content-between align-items-center">
                 <div class="d-flex col-md-10 mb-3 mb-md-0">
                     <h5 class="h3 mb-0">{{ __('Dashboard') }}</h5>
-                    
-                        {{-- //business Display Start --}}
-                        <ul class="list-unstyled">
-                            <li class="dropdown dash-h-item drp-language">
-                                <a class="dash-head-link dropdown-toggle arrow-none me-0 cust-btn shadow-sm border border-success"
-                                    data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false"
-                                    aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                                    data-bs-original-title="{{ __('Select your bussiness') }}">
-                                    <i class="ti ti-credit-card"></i>
-                                    <span class="drp-text hide-mob">{{ __(ucfirst($currantBusiness)) }}</span>
-                                    <i class="ti ti-chevron-down drp-arrow nocolor"></i>
-                                </a>
-                                <div class="dropdown-menu dash-h-dropdown dropdown-menu-end page-inner-dropdowm">
-                                    @foreach ($businesses as $key => $business)
-                                        <a href="{{ route('business.change', $key) }}" class="dropdown-item">
-                                            <i
-                                                class="@if ($bussiness_id == $key) ti ti-checks text-primary @elseif($currantBusiness == $business) ti ti-checks text-primary @endif "></i>
-                                            <span>{{ ucfirst($business) }}</span>
-                                        </a>
-                                    @endforeach
-                                </div>
-                            </li>
-                        </ul>
 
-                        {{-- //business Display End --}}
-                   
                 </div>
             </div>
         </div>
         <div class="col-sm-12">
-            <div class="row">
-                <div class="col-lg-4 welcome-card">
-                    <div class="border bg-light-success p-3 border-success rounded text-dark h-100">
-                        <div class="d-flex align-items-center mb-4">
-                            <div class="me-2">
-                                <img class="theme-avtar avtar rounded-circle"
-                                    src="{{ !empty($users->avatar) ? $profile . '/' . $users->avatar : $profile . '/avatar.png' }}" />
-                            </div>
-                            <div>
-                                <h5 class="mb-0">
-                                    <span class="d-block" id="greetings"></span>
-                                    <b class="f-w-700">{{ __(ucFirst(Auth::user()->name)) }}</b>
-                                </h5>
-                            </div>
-                        </div>
-                        <p class="mb-0">
-                            {{ __('Have a nice day! Did you know that you can quickly add your favorite card to the business?') }}
-                        </p>
-                        <div class="btn-group mt-4">
-                            <button class="btn  btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-plus me-2">
-                                    <line x1="12" y1="5" x2="12" y2="19"></line>
-                                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                                </svg>
-                                {{ __('Quick add') }}</button>
-                            <div class="dropdown-menu">
-                                @can('create business')
-                                    <a href="#" data-size="xl" data-url="{{ route('business.create') }}"
-                                        data-ajax-popup="true" data-title="Create New Business" class="dropdown-item"
-                                        data-bs-placement="top ">
-                                        <span>{{ __('Add new Business') }}</span>
-                                    </a>
-                                @endcan
-                                @can('create user')
-                                    <a href="#" data-size="md" data-url="{{ route('users.create') }}"
-                                        data-ajax-popup="true" data-title="Create New User" class="dropdown-item"
-                                        data-bs-placement="top ">
-                                        <span>{{ __('Add new user') }}</span>
-                                    </a>
-                                @endcan
-                                @can('create role')
-                                    <a href="#" data-size="lg" data-url="{{ route('roles.create') }}"
-                                        data-ajax-popup="true" data-title="Create New Role" class="dropdown-item"
-                                        data-bs-placement="top">
-                                        <span>{{ __('Add new role') }}</span>
-                                    </a>
-                                @endcan
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="row ">
                 @if ($businessData)
-                    <div class="col-md-2">
-                        <div class="card">
-                            <div class="card-body" style="min-height: 230px;">
+                    <div class="col-md-3">
+                        <div class="card" style="background: linear-gradient(to right, #fe5d70, #fe909d) !important;">
+                            <div class="card-body" style="min-height: 170px; max-height:170px">
                                 <h6 class="mb-0 text-center">{{ ucFirst($businessData->title) }}</h6>
                                 <div class="mb-3 shareqrcode text-center"></div>
                                 <div class="d-flex justify-content-between">
@@ -125,17 +47,17 @@
                                         data-bs-placement="top" title=""
                                         data-bs-original-title="Click to copy business link">
                                         {{ 'Business Link' }}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
                                             class="feather feather-copy ms-1">
-                                            <rect x="9" y="9" width="13" height="13"
-                                                rx="2" ry="2"></rect>
+                                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2">
+                                            </rect>
                                             <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                         </svg>
                                     </a>
                                     <a href="#" id="socialShareButton"
-                                        class="socialShareButton btn btn-sm btn-primary ms-1 share-btn">
+                                        class="socialShareButton btn btn-sm p-1 btn-primary ms-1 share-btn">
                                         <i class="ti ti-share"></i>
                                     </a>
                                     <div id="sharingButtonsContainer" class="sharingButtonsContainer"
@@ -147,65 +69,81 @@
                         </div>
                     </div>
                 @endif
-                <div class="col-md-2">
-                    <div class="card">
-                        <div class="card-body" style="min-height: 230px;">
-                            <div class="theme-avtar bg-primary">
-                                <i class="ti ti-briefcase dash-micon"></i>
+                <div class="col-md-3">
+                    <div class="card" style="background: linear-gradient(to right, #0ac282, #0df3a3);">
+                        <div class="card-body" style="min-height: 170px;">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="theme-avtar bg-light mt-3">
+                                        <i class="ti text-dark ti-briefcase dash-micon"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <p class=" text-light text-muted text-sm mt-3 mb-2"></p>
+                                    <h6 class=" text-light mb-2">{{ __('Total Business') }}</h6>
+                                    <h3 class=" text-light mb-0">{{ $total_bussiness }} </h3>
+                                </div>
+
                             </div>
-                            <p class="text-muted text-sm mt-4 mb-2"></p>
-                            <h6 class="mb-3">{{ __('Total Business') }}</h6>
-                            <h3 class="mb-0">{{ $total_bussiness }} </h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="card">
-                        <div class="card-body" style="min-height: 230px;">
-                            <div class="theme-avtar bg-warning">
-                                <i class="ti ti-clipboard-check dash-micon"></i>
+                <div class="col-md-3">
+                    <div class="card" style="background: linear-gradient(to right, #fe9365, #feb798);">
+                        <div class="card-body" style="min-height: 170px;">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="theme-avtar bg-light mt-3">
+                                        <i class="ti  text-dark ti-clipboard-check dash-micon"></i>
+                                    </div>
+                                </div>
+                                <div class="col-9 ">
+                                    <p class=" text-light text-sm mb-2 mt-3"></p>
+                                    <h6 class="mb-2 text-light">{{ __('Total Appointments') }}</h6>
+                                    <h3 class="mb-0 text-light">{{ $total_app }}</h3>
+                                </div>
                             </div>
-                            <p class="text-muted text-sm mt-4 mb-2"></p>
-                            <h6 class="mb-3">{{ __('Total Appointments') }}</h6>
-                            <h3 class="mb-0">{{ $total_app }}</h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <div class="card">
-                        <div class="card-body" style="min-height: 230px;">
-                            <div class="theme-avtar bg-warning">
-                                <i class="ti ti-users dash-micon"></i>
+                <div class="col-md-3" >
+                    <div class="card" style="min-height: 170px;background: linear-gradient(to right, #01a9ac, #01dbdf);">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                            <div class="theme-avtar bg-light mt-3">
+                                <i class="ti ti-users text-dark dash-micon"></i>
                             </div>
-                            <p class="text-muted text-sm mt-4 mb-2"></p>
-                            <h6 class="mb-3">{{ __('Total Staff') }}</h6>
-                            <h3 class="mb-0">{{ $total_staff }}</h3>
+                        </div>
+                            <div class="col-9">
+                                <p class=" text-light text-muted text-sm mb-2 mt-3"></p>
+                                <h6 class=" text-light mb-2">{{ __('Total Staff') }}</h6>
+                            <h3 class=" text-light mb-0">{{ $total_staff }}</h3>
                         </div>
                     </div>
                 </div>
-
-
-
+            </div>
+        </div>
                 <div class="col-lg-6 mt-2">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header" style="background:#7cccfc">
                             <div class="float-end">
-                                <span class="mb-0 float-right">{{ __('Last 7 Days') }}</span>
+                                <span class="text-light mb-0 float-right">{{ __('Last 7 Days') }}</span>
                             </div>
-                            <h5>{{ __('Appointments') }}</h5>
+                            <h5 class="text-light" >{{ __('Appointments') }}</h5>
                         </div>
                         <div class="card-body">
                             <div id="apex-storedashborad" data-color="primary" data-height="280"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-6 mt-2">
                     <div class="card">
-                        <div class="card-header">
+                        <div class="card-header" style="background:#7cccfc">
                             <div class="float-end">
-                                <span class="mb-0 text-sm float-right mt-1">{{ __('Last 15 Days') }}</span>
+                                <span class="text-light mb-0 text-sm float-right mt-1">{{ __('Last 15 Days') }}</span>
                             </div>
-                            <h5 class="mb-0 float-left">{{ __('Platform') }}</h5>
+                            <h5 class="text-light mb-0 float-left">{{ __('Platform') }}</h5>
                         </div>
                         <div class="card-body">
                             <div class="row align-items-center">
@@ -215,12 +153,12 @@
                     </div>
                 </div>
                 <div class="col-lg-4 ">
-                    <div class="card">
-                        <div class="card-header">
+                    <div class="card" style="height: 24rem; ">
+                        <div class="card-header" style="background: linear-gradient(to right, #01a9ac, #01dbdf);">
                             <div class="float-end">
-                                <span class="mb-0 text-sm float-right mt-1">{{ __('Last 15 Days') }}</span>
+                                <span class="text-light mb-0 text-sm float-right mt-1">{{ __('Last 15 Days') }}</span>
                             </div>
-                            <h5 class="mb-0 float-left">{{ __('Browser') }}</h5>
+                            <h5 class="mb-0 text-light float-left">{{ __('Browser') }}</h5>
                         </div>
                         <div class="card-body">
                             <div class="row align-items-center">
@@ -230,12 +168,13 @@
                     </div>
                 </div>
                 <div class="col-lg-4 ">
-                    <div class="card">
-                        <div class="card-header">
+                    <div class="card" style="height: 24rem; ">
+                        <div class="card-header" style="background: linear-gradient(to right, #0ac282, #0df3a3);
+                        ">
                             <div class="float-end">
-                                <span class="mb-0 text-sm float-right mt-1">{{ __('Last 15 Days') }}</span>
+                                <span class="mb-0 text-light text-sm float-right mt-1">{{ __('Last 15 Days') }}</span>
                             </div>
-                            <h5 class="mb-0 float-left">{{ __('Device') }}</h5>
+                            <h5 class="mb-0 text-light float-left">{{ __('Device') }}</h5>
                         </div>
                         <div class="card-body">
                             <div class="row align-items-center">
@@ -247,9 +186,9 @@
                 {{-- Storage Limit Chart --}}
                 @if (\Auth::user()->type == 'company')
                     <div class="col-md-4 ">
-                        <div class="card">
-                            <div class="card-header">
-                                <h5>{{ __('Storage Status') }} <small>({{ $users->storage_limit . 'MB' }} /
+                        <div class="card" style="height: 24rem; ">
+                            <div class="card-header " style="background: linear-gradient(to right, #fe9365, #feb798);">
+                                <h5 class="text-light">{{ __('Storage Status') }} <small>({{ $users->storage_limit . 'MB' }} /
                                         {{ $plan->storage_limit . 'MB' }})</small></h5>
                             </div>
                             <div class="card-body">
@@ -593,7 +532,7 @@
                             top: -10
                         }
                     },
-                    colors: ["#6FD943"],
+                    colors: ["#000"],
                     labels: ['Used'],
                 };
                 var chart = new ApexCharts(document.querySelector("#device-chart"), options);
@@ -671,22 +610,22 @@
         </script>
 
         <script type="text/javascript">
-        @if ($businessData)
-            $(document).ready(function() {
-                var customURL = {!! json_encode(url('/' . $businessData->slug)) !!};
-                $('.Demo1').socialSharingPlugin({
-                    url: customURL,
-                    title: $('meta[property="og:title"]').attr('content'),
-                    description: $('meta[property="og:description"]').attr('content'),
-                    img: $('meta[property="og:image"]').attr('content'),
-                    enable: ['whatsapp', 'facebook', 'twitter', 'pinterest', 'linkedin']
-                });
+            @if ($businessData)
+                $(document).ready(function() {
+                    var customURL = {!! json_encode(url('/' . $businessData->slug)) !!};
+                    $('.Demo1').socialSharingPlugin({
+                        url: customURL,
+                        title: $('meta[property="og:title"]').attr('content'),
+                        description: $('meta[property="og:description"]').attr('content'),
+                        img: $('meta[property="og:image"]').attr('content'),
+                        enable: ['whatsapp', 'facebook', 'twitter', 'pinterest', 'linkedin']
+                    });
 
-                $('.socialShareButton').click(function(e) {
-                    e.preventDefault();
-                    $('.sharingButtonsContainer').toggle();
+                    $('.socialShareButton').click(function(e) {
+                        e.preventDefault();
+                        $('.sharingButtonsContainer').toggle();
+                    });
                 });
-            });
             @endif
         </script>
     @endpush

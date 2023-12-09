@@ -1,17 +1,17 @@
 @php
-    
+
     $company_logo = \App\Models\Utility::GetLogo();
     $logo = \App\Models\Utility::get_file('uploads/logo/');
     $users = \Auth::user();
     $bussiness_id = '';
     $bussiness_id = $users->current_business;
-    
+
 @endphp
 
 <!-- [ navigation menu ] start -->
 
 @if (isset($setting['cust_theme_bg']) && $setting['cust_theme_bg'] == 'on')
-    <nav class="dash-sidebar light-sidebar transprent-bg">
+    <nav class="dash-sidebar custom-sidebar dark-sidebar transprent-bg">
     @else
         <nav class="dash-sidebar light-sidebar">
 @endif
@@ -19,17 +19,26 @@
 <div class="navbar-wrapper">
     <div class="m-header main-logo">
         <a href="#" class="b-brand">
-
+            @php
+                $logoPath = 'uploads/logo/';
+                $logoFilename = isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png';
+                $fullImagePath = $logoPath . $logoFilename;
+                $logoUrl = Storage::exists($fullImagePath) ? Storage::url($fullImagePath) : null;
+                
+            @endphp
+    
             @if ($setting['cust_darklayout'] == 'on')
                 <img src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-light.png') . '?' . time() }}"
                     alt="" class="img-fluid" />
             @else
-                <img src="{{ $logo . (isset($company_logo) && !empty($company_logo) ? $company_logo : 'logo-dark.png') . '?' . time() }}"
-                    alt="" class="img-fluid" />
+                @if (Storage::exists($fullImagePath))
+                
+                    <img src="{{ $logoUrl }}" alt="" class="img-fluid" />
+                @endif
             @endif
-
         </a>
     </div>
+    
     <div class="navbar-content">
         <ul class="dash-navbar">
 
@@ -40,31 +49,33 @@
 
             </li>
             @if (Auth::user()->type != 'super admin')
-            <li class="dash-item dash-hasmenu">
-                <a class="dash-link {{ Request::segment(1) == 'new_business' || Request::segment(1) == 'business' ? 'active' : '' }}"
-                    data-toggle="collapse" role="button"
-                    aria-expanded="{{ Request::segment(1) == 'new_business' || Request::segment(1) == 'business' ? 'true' : 'false' }}"
-                    aria-controls="navbar-getting-started"><span class="dash-micon"><i
-                            class="ti ti-credit-card"></i></span><span class="dash-mtext">{{ __('Business') }}</span><span
-                        class="dash-arrow"><i data-feather="chevron-right"></i></span>
-                </a>
-                <ul class="dash-submenu">
-                    @if (\Auth::user()->can('create business'))
-                        <li class="dash-item {{ Request::segment(1) == 'new_business' ? 'active' : '' }}">
-                            <a href="#" class="dash-link" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                data-url="{{ route('business.create') }}" data-size="xl"
-                                data-bs-whatever="{{ __('Create New Business') }}"> {{ __('Create business') }}
-                            </a>
-                        </li>
-                    @endif
-                    @if (\Auth::user()->can('manage business'))
-                        <li class="dash-item {{ Request::segment(1) == 'business' ? 'active' : '' }}">
-                            <a class="dash-link" href="{{ route('business.index') }}">{{ __('Business') }}</a>
+                <li class="dash-item dash-hasmenu">
+                    <a class="dash-link {{ Request::segment(1) == 'new_business' || Request::segment(1) == 'business' ? 'active' : '' }}"
+                        data-toggle="collapse" role="button"
+                        aria-expanded="{{ Request::segment(1) == 'new_business' || Request::segment(1) == 'business' ? 'true' : 'false' }}"
+                        aria-controls="navbar-getting-started"><span class="dash-micon"><i
+                                class="ti ti-credit-card"></i></span><span
+                            class="dash-mtext">{{ __('Business') }}</span><span class="dash-arrow"><i
+                                data-feather="chevron-right"></i></span>
+                    </a>
+                    <ul class="dash-submenu">
+                        @if (\Auth::user()->can('create business'))
+                            <li class="dash-item {{ Request::segment(1) == 'new_business' ? 'active' : '' }}">
+                                <a href="#" class="dash-link" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" data-url="{{ route('business.create') }}"
+                                    data-size="xl" data-bs-whatever="{{ __('Create New Business') }}">
+                                    {{ __('Create business') }}
+                                </a>
+                            </li>
+                        @endif
+                        @if (\Auth::user()->can('manage business'))
+                            <li class="dash-item {{ Request::segment(1) == 'business' ? 'active' : '' }}">
+                                <a class="dash-link" href="{{ route('business.index') }}">{{ __('Business') }}</a>
 
-                        </li>
-                    @endif
-                </ul>
-            </li>
+                            </li>
+                        @endif
+                    </ul>
+                </li>
             @endif
 
             <li class="dash-item dash-hasmenu">

@@ -32,7 +32,7 @@
                         <div class="page-header">
                             <div class="page-block">
                                 <div class="row align-items-center">
-                                    <div class="col-md-12">
+                                    <div class="col-md-12 px-4 mb-4">
                                         <div class="row justify-content-between align-items-center">
                                             <div class="col-auto">
                                                 <h4 class="m-b-10"> @yield('title')</h4>
@@ -116,7 +116,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modelCommanModelLabel"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <button type="button" class="btn-close text-light" data-bs-dismiss="modal" aria-label="Close">
                     </button>
                 </div>
                 <div class="modal-body">
